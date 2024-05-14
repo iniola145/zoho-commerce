@@ -566,10 +566,6 @@ video {
   right: 0px;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -603,13 +599,4 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.font-bold {
-  font-weight: 700;
 }
