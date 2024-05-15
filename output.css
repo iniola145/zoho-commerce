@@ -586,6 +586,18 @@ video {
   flex-grow: 1;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
 .items-center {
   align-items: center;
 }
