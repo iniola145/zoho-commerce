@@ -4,4 +4,8 @@
     margin: 0;
     padding: 0;
     --lightgreen: #01EE65;
+    --lightergreen: #D8F6E6;
+}
+.nav-bar{
+    border-bottom: 1px solid #E7EBF0;
 }
