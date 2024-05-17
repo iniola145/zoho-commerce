@@ -23,3 +23,8 @@
     background-size: cover;
     background-position: center;
 }
+.background-pattern {
+    background-image: url('path/to/your/pattern-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
