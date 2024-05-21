@@ -9,6 +9,10 @@
 }
 .nav-bar{
     border-bottom: 1px solid #E7EBF0;
+    justify-content: space-between;
+}
+.menu-link{
+    display: none;
 }
 .cursive-p{
     font-family: "Caveat", cursive;
@@ -26,10 +30,56 @@
 /* Media query */
 @media screen and (max-width: 400px) {
     .nav-bar {
-        padding: 10px 20px; /* Adjust as needed for smaller screens */
+        justify-content: space-around;
     }
-
+    .menu-link{
+        display: inline;
+        font-size: 2rem;
+    }
+    /* .menu-link:hover .nav-list{
+        display: flex;
+        flex-direction: column;
+    } */
+    /* .nav-bar a{
+        display: flex;
+        align-self: center;
+    } */
+    .nav-list{
+        display: none;
+    }
     .nav-bar ul li {
-        margin-right: 10px; /* Adjust as needed for smaller screens */
+        margin-right: 10px;
+    }
+    .page-1{
+        display: block;
+        margin: 18px 0;
+        padding: 0;
+    }
+    .page-2{
+        display: none;
+    }
+    .page-3{
+        display: none;
+    }
+    .page-4{
+        display: none;
+    }
+    .page-5{
+        display: none;
+    }
+    .page-6{
+        display: none;
+    }
+    .page-7{
+        display: none;
+    }
+    .page-8{
+        display: none;
+    }
+    .page-last{
+        display: none;
+    }
+    .page-footer{
+        display: none;
     }
 }
