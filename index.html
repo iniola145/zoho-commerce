@@ -19,7 +19,7 @@
 
 <body class="w-fit">
     <!-- Navigation menu -->
-    <nav class="nav-bar flex py-5 px-4 items-center fixed left-0 right-0 z-50 bg-white">
+    <nav class="nav-bar flex py-5 px-4 items-center fixed top-0 left-0 right-0 z-50 bg-white">
         <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="first h-[44px]"></a>
         <a href="#" class="menu-link"x><i class='bx bx-menu'></i></a>
         <!-- Menu options -->
@@ -34,14 +34,14 @@
         </ul>
     </nav>
     <!-- First page -->
-    <section class="py-[140px] px-4 sm:px-10 md:px-20 w-full md:w-fit page-1">
+    <section class="py-[90px] md:py-[140px] px-4 sm:px-10 md:px-20 w-full md:w-fit page-1">
         <div class="py-8">
-            <p class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black w-full sm:w-[85%] md:w-[75%]">
+            <p class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:text-left font-black w-full sm:w-[85%] md:w-[75%]">
                 Do business in the world's busiest market, the internet.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 items-center">
                 <button
-                    class="bg-[#01EE65] flex items-center p-4 border border-solid border-black rounded-[30px] my-4 sm:my-10">
+                    class="bg-[#01EE65] flex items-center py-[17px] px-[36px] md:p-4 border border-solid border-black rounded-[30px] my-4 sm:my-10">
                     Sign up - it's free
                 </button>
                 <button class="flex items-center p-4 border border-solid border-black rounded-[30px] h-max">
@@ -49,35 +49,35 @@
                 </button>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row bg-[#D8F6E6] rounded-[20px] h-auto md:h-[45vh] justify-between">
+        <div class="flex flex-col-reverse md:flex-row bg-[#D8F6E6] rounded-[20px] h-auto md:h-[45vh] justify-between">
             <!-- Zoho commerce intro -->
             <div class="w-full md:w-[40%] p-6 sm:p-10 text-[#003F3C]">
                 <p class="text-xl sm:text-2xl font-medium">
                     "Zoho Commerce is an excellent ecommerce platform for our growth. It's a world-class product at an
                     affordable price."
                 </p>
-                <p class="font-medium mt-4 sm:mt-[30px]">Mr Tunde</p>
-                <p>Director, Zoho</p>
+                <p class="font-medium md:text-left text-center mt-4 sm:mt-[30px]">Mr Tunde</p>
+                <p class="md:text-left text-center">Director, Zoho</p>
             </div>
             <!-- Second zoho icons -->
-            <div class="flex flex-col py-6 sm:py-10 justify-between">
-                <div class="flex justify-between gap-4 items-center">
+            <div class="flex flex-row md:flex-col pt-8 md:py-6 sm:py-10 justify-between">
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
                     <img src="./Images/growth-stats-heart.jpg" alt="growth-stats-heart">
-                    <div class="flex flex-col items-start">
+                    <div class="flex flex-col items-center md:items-start">
                         <p class="text-black font-[600]">18,000</p>
                         <p>SKUs listed</p>
                     </div>
                 </div>
-                <div class="flex justify-between gap-4 items-center">
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
                     <img src="./Images/growth-stats-plus.jpg" alt="growth-stats-plus">
-                    <div class="flex flex-col items-start">
+                    <div class="flex flex-col items-center md:items-start">
                         <p class="text-black font-[600]">7000/pm</p>
                         <p>SKUs listed</p>
                     </div>
                 </div>
-                <div class="flex justify-between gap-4 items-center">
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
                     <img src="./Images/growth-stats-arrow.jpg" alt="growth-stats-arrow">
-                    <div class="flex flex-col items-start">
+                    <div class="flex flex-col items-center md:items-start">
                         <p class="text-black font-[600]">70%</p>
                         <p>SKUs listed</p>
                     </div>
@@ -91,31 +91,89 @@
     </section>
     
     <!-- Second Page -->
-    <section class="bg-[#003F3C] pt-[120px] pb-[160px] page-2">
-        <div class="mx-[60px]">
+    <section class="bg-[#003F3C] pt-20 md:pt-[120px] pb-20 md:pb-[160px] page-2">
+        <div class="mx-4 md:mx-[60px]">
             <!-- Build section1 -->
-            <div class="flex justify-between items-center">
-                <div>
-                    <p class="cursive-p text-[#01EE65] text-[28px]">Build</p>
-                    <p class="text-[40px] text-white font-medium">Build an online store that</p>
-                    <p class="text-[76px] text-white font-semibold">never sleeps <span class="text-[#01EE65]">.</span>
-                    </p>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <p class="cursive-p text-[#01EE65] text-lg md:text-[28px]">Build</p>
+                    <p class="text-3xl md:text-[40px] text-white font-medium">Build an online store that</p>
+                    <p class="text-5xl md:text-[76px] text-white font-semibold">never sleeps <span class="text-[#01EE65]">.</span></p>
                 </div>
-                <div>
-                    <a href="#" class="text-white rounded-[30px] border-[1px] border-[#cdddd5] py-4 px-7 mx-10">Build an
-                        online store today</a>
+                <div class="mt-8 md:mt-0">
+                    <a href="#" class="text-white rounded-full border border-[#cdddd5] py-3 px-6 md:py-4 md:px-7 md:mx-10">
+                        Build an online store today
+                    </a>
                 </div>
             </div>
-            <!-- Part I cant really do -->
-            <div class="h-screen">
 
+             <!-- Image section 1 -->
+             <div class="flex justify-center mt-16">
+                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
             </div>
+            <!-- Text section 1 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show your brand in bold</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Pick from an array of customizable ecommerce store themes for your online store and attract your kind of customers.
+                </p>
+            </div>
+            <!-- Media query divider 1 -->
+            <div class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10"></div>
+
+            <!-- Image section 2 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 2 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch with zero code</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Save time and costs on coding and confidently run your store on zero code. Pick a domain, list your products, and start selling - it is as easy as it sounds.
+                </p>
+            </div>
+            <!-- Media query divider 2 -->
+            <div class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10"></div>
+
+            <!-- Image section 3 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/visual-editor.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 3 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Customize, start to finish</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Show your buyers how easy and secure it is to shop from you, from adding products to their carts till having a clean, customizable checkout process.
+                </p>
+            </div>
+            <!-- Media query divider 3 -->
+            <div class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10"></div>
+
+            <!-- Image section 4 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/products.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 4 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate pretty displays</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Thoughtfully list, categorize, and add your products to a collection, making sure you display your products within a click's reach.
+                </p>
+            </div>
+            <!-- Media query divider 4 -->
+            <div class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10"></div>
         </div>
-
     </section>
     <!-- Third Page -->
-    <section class="bg-[#F9EDD7] h-screen py-40 page-3">
-
+    <section class="bg-[#F9EDD7] w-full py-16 md:py-[140px] px-4 sm:px-10 md:px-20 md:w-full page-3 box-border text-center">
+        <div class="container mx-auto">
+            <p class="text-[#D9534F] text-lg md:text-[28px] font-medium cursive-p">Manage</p>
+            <p class="mt-4 text-black text-xl md:text-2xl lg:text-3xl font-medium">From shopping carts to content customers,</p>
+            <p class="mt-2 text-black text-3xl md:text-4xl lg:text-5xl font-semibold">your entire order cycle, <br class="md:hidden"> automated</p>
+            <div class="flex justify-center mt-10">
+                <img src="./Images/shopping-cycle.png" alt="Order Cycle" class="w-full md:w-2/3 lg:w-full">
+            </div>
+        </div>
     </section>
     <!-- Fourth Page -->
     <section class="py-40 page-4">
