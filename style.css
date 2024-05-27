@@ -27,6 +27,7 @@
     background-size: cover;
     background-position: center;
 }
+
 /* Media query */
 @media screen and (max-width: 400px) {
     .nav-bar {
@@ -50,16 +51,4 @@
     .nav-bar ul li {
         margin-right: 10px;
     }    
-    .page-7{
-        display: none;
-    }
-    .page-8{
-        display: none;
-    }
-    .page-last{
-        display: none;
-    }
-    .page-footer{
-        display: none;
-    }
 }

@@ -368,13 +368,13 @@
         </div>
     </section>
     <!-- Seventh Page -->
-    <section class="py-16 bg-white page-7">
-        <div class=" mx-[60px]">
-            <div class="flex justify-between items-center">
-                <div>
+    <section class="py-16 bg-white">
+        <div class="mx-4 sm:mx-10 md:mx-[60px]">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <div class="text-center md:text-left">
                     <p class="cursive-p text-[#E32426] text-[28px]">Market</p>
-                    <p class="text-[52px] text-black font-bold">From getting started to</p>
-                    <p class="text-[52px] text-black font-bold">
+                    <p class="text-[32px] md:text-[52px] text-black font-bold">From getting started to</p>
+                    <p class="text-[32px] md:text-[52px] text-black font-bold">
                         what's next,<span class="text-[#00973F]">we've got it all.</span>
                     </p>
                 </div>
@@ -420,41 +420,41 @@
         </div>
     </section>
     <!-- Eigth Page -->
-    <section class="py-16 min-h-screen page-8">
-        <div
-            class="flex items-center justify-center text-center rounded-[30px] shadow-lg bg-[#01403D] relative mx-[60px] h-[550px] ">
-            <div class="absolute top-0 left-0 w-[133px] h-[350px]">
-                <img src="./Images/left-img-basket.png" alt="">
+  <section class="py-16 min-h-screen">
+        <div class="flex items-center justify-center text-center rounded-[30px] shadow-lg bg-[#01403D] relative mx-4 sm:mx-10 md:mx-[60px] h-[550px]">
+            <!-- Left Image -->
+            <div class="hidden md:block absolute top-0 left-0 w-[80px] md:w-[133px] h-[200px] md:h-[350px]">
+                <img src="./Images/left-img-basket.png" alt="Left Image">
             </div>
-            <div class="mb-10 w-[800px] flex items-center flex-col">
-                <h1 class="text-white text-[47px] font-bold mb-6">What better day to start doing business with the
-                    internet?</h1>
+            <!-- Center Content -->
+            <div class="mb-10 w-full max-w-lg md:max-w-2xl flex items-center flex-col">
+                <h1 class="text-white text-[32px] md:text-[47px] font-bold mb-10 md:mb-6">What better day to start doing business with the internet?</h1>
                 <a href="#"
-                    class="block w-[595px] border-[1px] border-black bg-green-500 hover:bg-green-400 text-white font-bold p-10 rounded-full transition duration-300 ease-in-out">Start
+                    class="block w-full max-w-xs md:max-w-md border-[1px] border-black bg-green-500 hover:bg-green-400 text-white font-bold p-5 md:p-10 rounded-full transition duration-300 ease-in-out">Start
                     today with Zoho Commerce</a>
             </div>
-            <div class="absolute bottom-0 right-0 w-[133px] ">
-                <img src="./Images/right-img-basket.png" alt="">
+            <!-- Right Image -->
+            <div class="hidden md:block absolute bottom-0 right-0 w-[80px] md:w-[133px] ">
+                <img src="./Images/right-img-basket.png" alt="Right Image">
             </div>
         </div>
     </section>
     <!-- Last page -->
-    <section class="bg-black py-[60px] page-last">
+    <section class="bg-black py-[60px]">
         <!-- Images at the footer -->
         <div class="flex flex-col justify-center items-center pb-10">
             <a href="#" class="block mb-3 mx-auto max-w-[350px]">
-                <img src="./Images/zoho-commerce-demo-footer.jpg" alt="">
+                <img src="./Images/zoho-commerce-demo-footer.jpg" alt="Demo Image" class="w-full h-auto object-cover">
             </a>
             <a href="#" class="block mb-3 mx-auto max-w-[350px]">
-                <img src="./Images/zoho-commerce-youtube-footer.jpg" alt="">
+                <img src="./Images/zoho-commerce-youtube-footer.jpg" alt="YouTube Image" class="w-full h-auto object-cover">
             </a>
             <a href="#" class="block mb-3 mx-auto max-w-[350px]">
-                <img src="/Images/zoho-survey-banner.jpg" alt="">
+                <img src="./Images/zoho-survey-banner.jpg" alt="Survey Banner Image" class="w-full h-auto object-cover">
             </a>
         </div>
         <!-- Footer links -->
-        <div
-            class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  text-white text-sm h-screen">
+        <div class="container px-4 md:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-white text-sm">
             <div>
                 <h3 class="font-bold mb-4">Features</h3>
                 <ul class="space-y-2">
@@ -470,7 +470,6 @@
                     <li><a href="#">Book a Demo</a></li>
                 </ul>
             </div>
-
             <div>
                 <h3 class="font-bold mb-4">Resources</h3>
                 <ul class="space-y-2">
@@ -485,7 +484,6 @@
                     <li><a href="#">GDPR</a></li>
                 </ul>
             </div>
-
             <div>
                 <h3 class="font-bold mb-4">Explore More</h3>
                 <ul class="space-y-2">
@@ -504,7 +502,6 @@
                     <li><a href="#">The Complete Ecommerce Store</a></li>
                 </ul>
             </div>
-
             <div>
                 <h3 class="font-bold mb-4">Discover</h3>
                 <ul class="space-y-2">
@@ -516,7 +513,6 @@
                     <li><a href="#">Pricing</a></li>
                 </ul>
             </div>
-
             <div>
                 <h3 class="font-bold mb-4">Comparison</h3>
                 <ul class="space-y-2">
@@ -538,7 +534,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <h3 class="font-bold mb-4">Collaborate</h3>
                 <ul class="space-y-2">
@@ -550,10 +545,10 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="bg-gray-100">
         <!-- Top Section -->
-        <div class="border-b py-2 flex justify-between items-center px-4">
-            <div class="flex items-center space-x-4">
+        <div class="border-b py-2 flex flex-col sm:flex-row justify-between items-center px-4">
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <a href="mailto:support@zohocommerce.com" class="text-blue-500 flex items-center">
                     <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
                 </a>
@@ -561,7 +556,7 @@
                     <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
                 </a>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4 mt-2 sm:mt-0">
                 <i class="bx bx-globe"></i>
                 <select class="bg-gray-100 border-none outline-none">
                     <option value="en">English</option>
@@ -569,21 +564,21 @@
                 </select>
             </div>
         </div>
-
+    
         <!-- Search Section -->
-        <div class="py-12">
-            <div class="container mx-auto flex justify-center">
-                <input type="text" class="border rounded-lg w-2/3 p-4"
+        <div class="py-12 mx-4">
+            <div class="container mx-auto flex flex-row justify-center items-center">
+                <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
                     placeholder="Search for product overviews, FAQs, and more...">
-                <button class="ml-4 bg-gray-200 p-4 rounded-lg">
-                    <i class="bx bx-search"></i>
+                <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
+                    <i class="bx bx-search text-[20px]"></i>
                 </button>
             </div>
         </div>
-
+    
         <!-- Footer Section -->
-        <footer class="bg-gray-100 py-6">
-            <div class="container mx-auto flex justify-center space-x-4 text-sm">
+        <div class="bg-gray-100 py-6">
+            <div class="hidden md:flex container mx-auto flex-wrap justify-center space-x-4 text-sm">
                 <a href="#" class="hover:underline">Zoho Home</a>
                 <a href="#" class="hover:underline">Contact Us</a>
                 <a href="#" class="hover:underline">Security</a>
@@ -599,9 +594,7 @@
             <div class="text-center text-sm mt-4">
                 &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
             </div>
-        </footer>
-
-
+        </div>
     </footer>
 </body>
 
