@@ -7,48 +7,12 @@
     --lightergreen: #D8F6E6;
     --darkgreen: #003F3C;
 }
-.nav-bar{
-    border-bottom: 1px solid #E7EBF0;
-    justify-content: space-between;
-}
-.menu-link{
-    display: none;
-}
 .cursive-p{
     font-family: "Caveat", cursive;
 } 
-.flex-items{
-    flex-grow: 1;
-    padding: 40px 55px 50px 50px;
-}
 .background-image{
     background-image: url(./Images/market-cx-ceo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-/* Media query */
-@media screen and (max-width: 400px) {
-    .nav-bar {
-        justify-content: space-around;
-    }
-    .menu-link{
-        display: inline;
-        font-size: 2rem;
-    }
-    /* .menu-link:hover .nav-list{
-        display: flex;
-        flex-direction: column;
-    } */
-    /* .nav-bar a{
-        display: flex;
-        align-self: center;
-    } */
-    .nav-list{
-        display: none;
-    }
-    .nav-bar ul li {
-        margin-right: 10px;
-    }    
 }
