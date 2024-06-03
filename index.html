@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="w-fit">
+    <!-- Navigation menu -->
+    <nav
+        class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
+        <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="first h-[44px]"></a>
+        <a href="#" class="inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
+        <!-- Menu options -->
+        <ul class="hidden md:block space-x-4 lg:space-x-11">
+            <li class="inline-block "><a href="#" class="text-[13px] lg:text-[15px]">Features</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Pricing</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Themes</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Integrations</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Customers</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Resources</a></li>
+            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Support</a></li>
+        </ul>
+    </nav>
+    <!-- First page -->
+    <section class="py-[90px] md:py-[140px] px-4 sm:px-10 md:px-10 lg:px-20 w-full md:w-fit page-1">
+        <div class="py-8">
+            <p
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:text-left font-black w-full sm:w-[85%] md:w-[75%]">
+                Do business in the world's busiest market, the internet.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 items-center">
+                <button
+                    class="bg-[#01EE65] flex items-center py-[17px] px-[36px] md:p-4 border border-solid border-black rounded-[30px] my-4 sm:my-10">
+                    Sign up - it's free
+                </button>
+                <button class="flex items-center p-4 border border-solid border-black rounded-[30px] h-max">
+                    Schedule a free demo
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col-reverse md:flex-row bg-[#D8F6E6] rounded-[20px] h-auto xl:h-[45vh] justify-between">
+            <!-- Zoho commerce intro -->
+            <div class="w-full md:w-[40%] p-6 sm:p-10 text-[#003F3C]">
+                <p class="text-xl sm:text-2xl font-medium">
+                    "Zoho Commerce is an excellent ecommerce platform for our growth. It's a world-class product at an
+                    affordable price."
+                </p>
+                <p class="font-medium md:text-left text-center mt-4 sm:mt-[30px]">Mr Tunde</p>
+                <p class="md:text-left text-center">Director, Zoho</p>
+            </div>
+            <!-- Second zoho icons -->
+            <div class="flex flex-row md:flex-col pt-8 px-2 md:py-6 sm:py-10 justify-between">
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
+                    <img src="./Images/growth-stats-heart.jpg" alt="growth-stats-heart">
+                    <div class="flex flex-col items-center md:items-start">
+                        <p class="text-black font-[600]">18,000</p>
+                        <p>SKUs listed</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
+                    <img src="./Images/growth-stats-plus.jpg" alt="growth-stats-plus">
+                    <div class="flex flex-col items-center md:items-start">
+                        <p class="text-black font-[600]">7000/pm</p>
+                        <p>SKUs listed</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
+                    <img src="./Images/growth-stats-arrow.jpg" alt="growth-stats-arrow">
+                    <div class="flex flex-col items-center md:items-start">
+                        <p class="text-black font-[600]">70%</p>
+                        <p>SKUs listed</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third zoho image of CEO -->
+            <div class="rounded-[20px] max-xl:basis-[40%] w-full md:w-auto">
+                <img src="./Images/house-bg-img.png" class="object-cover w-[full] h-full" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Page -->
+    <section class="bg-[#003F3C] pt-20 md:pt-[120px] pb-20 md:pb-[160px] page-2">
+        <div class="mx-4 md:mx-[60px]">
+            <!-- Build section1 -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <p class="cursive-p text-[#01EE65] text-lg md:text-[28px]">Build</p>
+                    <p class="text-3xl md:text-[34px] lg:text-[40px] text-white font-medium">Build an online store that
+                    </p>
+                    <p class="text-5xl md:text-[64px] lg:text-[76px] text-white font-semibold">never sleeps <span
+                            class="text-[#01EE65]">.</span></p>
+                </div>
+                <!-- Button -->
+                <a href="#"
+                    class="text-white mt-8 rounded-full border border-[#cdddd5] py-2 px-4 sm:py-3 sm:px-5 md:mt-0 md:py-3 md:px-6 lg:py-4 lg:px-7 md:mx-4 lg:mx-10 xl:mx-12">
+                    Build an online store today
+                </a>
+            </div>
+
+            <!-- Image section 1 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 1 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show your brand in bold</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Pick from an array of customizable ecommerce store themes for your online store and attract your
+                    kind of customers.
+                </p>
+            </div>
+            <!-- Media query divider 1 -->
+            <div
+                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
+            </div>
+
+            <!-- Image section 2 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 2 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch with zero code</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Save time and costs on coding and confidently run your store on zero code. Pick a domain, list your
+                    products, and start selling - it is as easy as it sounds.
+                </p>
+            </div>
+            <!-- Media query divider 2 -->
+            <div
+                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
+            </div>
+
+            <!-- Image section 3 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/visual-editor.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 3 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Customize, start to finish</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Show your buyers how easy and secure it is to shop from you, from adding products to their carts
+                    till having a clean, customizable checkout process.
+                </p>
+            </div>
+            <!-- Media query divider 3 -->
+            <div
+                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
+            </div>
+
+            <!-- Image section 4 -->
+            <div class="flex justify-center mt-16">
+                <img src="./Images/products.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+            </div>
+            <!-- Text section 4 -->
+            <div class="mt-10">
+                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate pretty displays</p>
+                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                    Thoughtfully list, categorize, and add your products to a collection, making sure you display your
+                    products within a click's reach.
+                </p>
+            </div>
+            <!-- Media query divider 4 -->
+            <div
+                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
+            </div>
+        </div>
+    </section>
+    <!-- Third Page -->
+    <section
+        class="bg-[#F9EDD7] w-full py-16 md:py-[140px] px-4 sm:px-10 md:px-[60px] md:w-full page-3 box-border text-center">
+        <div class="container mx-auto">
+            <p class="text-[#D9534F] text-lg md:text-[28px] font-medium cursive-p">Manage</p>
+            <p class="md:mt-4 text-black text-lg md:text-2xl lg:text-3xl font-medium">From shopping carts to content
+                customers,</p>
+            <p class="md:mt-2 text-black text-2xl md:text-4xl lg:text-5xl font-semibold">your entire order cycle, <br
+                    class="md:hidden"> automated</p>
+            <div class="flex justify-center mt-10">
+                <img src="./Images/shopping-cycle.png" alt="Order Cycle"
+                    class="w-full md:w-2/3 lg:w-full hidden md:block">
+                <img src="./Images/happy-customer-heart.png" alt="Order" class="w-full md:w-2/3 lg:w-full md:hidden ">
+            </div>
+        </div>
+    </section>
+    <!-- Fourth Page -->
+    <section class="py-16 md:py-[140px] page-4">
+        <div class="mx-4 sm:mx-10 md:mx-10 lg:mx-[60px]">
+            <!-- Market tools -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <p class="cursive-p text-[#E32426] text-[28px]">Market</p>
+                    <p class="text-[32px] md:text-[42px] lg:text-[52px] text-black font-bold">Tools to find your</p>
+                    <p class="text-[32px] md:text-[42px] lg:text-[52px] text-black font-bold">
+                        <span class="text-[#00973F] line-through">buyers</span> loyal fan-base.
+                    </p>
+                </div>
+
+                <a href="#"
+                    class="text-black max-md:w-[40%] mt-6 md:mt-0 rounded-[30px] border-[1px] border-[#cdddd5] py-4 px-7 lg:mx-10">Start
+                    selling in style</a>
+
+            </div>
+            <!-- Advertisement cards -->
+            <div class="flex flex-wrap gap-7 rounded-[30px] mt-10">
+                <!-- First Advertisement card -->
+                <div
+                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row bg-[#F9EDD7] basis-full md:basis-[40%] rounded-[30px] gap-6 p-6">
+                    <div>
+                        <p class="text-[#E32426] font-semibold">SEO</p>
+                        <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Be the first store in
+                            search</p>
+                        <p class="text-[18px]">The built-in and extensible SEO tools ensures your store is found first
+                            when a shopper is looking to make a purchase.</p>
+                    </div>
+                    <div class="w-full md:w-[100%]">
+                        <img src="./Images/seo-illustration-hand-holding-block.png" alt="SEO illustration">
+                    </div>
+                </div>
+                <!-- Second Advertisement card -->
+                <div
+                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[53%] rounded-[30px] gap-6 p-6">
+                    <div>
+                        <p class="text-[#E32426] font-semibold">SOCIAL SELLING</p>
+                        <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Make them buy where they
+                            browse</p>
+                        <p class="text-[18px]">Make it easier for your buyers to shop from you, regardless of what
+                            social platform they're on.</p>
+                    </div>
+                    <div class="w-full md:w-[90%]">
+                        <img src="./Images/social-illustration-dress-outof-phone.png" alt="Social Selling illustration">
+                    </div>
+                </div>
+                <!-- Third Advertisement card -->
+                <div
+                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#008452] basis-full md:basis-[50%] rounded-[30px] gap-6 p-6">
+                    <div>
+                        <p class="text-[#01EE65] font-semibold">CAMPAIGNS</p>
+                        <p class="text-white text-[24px] md:text-[30px] font-bold my-[20px]">Get shoppers to the finish
+                            line</p>
+                        <p class="text-[18px] text-white font-medium">Turn all your shoppers into buyers as you prompt
+                            them to finish their checkout line using effective campaigns and smart notifications.</p>
+                    </div>
+                    <div class="w-full md:w-[90%]">
+                        <img src="./Images/campaign-illustration-hand-email.png" alt="Campaigns illustration">
+                    </div>
+                </div>
+                <!-- Fourth Advertisement card -->
+                <div
+                    class="md:flex hidden flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row basis-full md:basis-[30%] rounded-[30px] p-6 md:p-0 background-image">
+                    <!-- Placeholder for background image or other content -->
+                </div>
+                <!-- Fifth Advertisement card -->
+                <div
+                    class="flex flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] flex-col md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[30%] rounded-[30px] gap-6 p-6 m-d:p-0">
+                    <div>
+                        <p class="text-[#E32426] font-semibold">CONTENT MANAGEMENT</p>
+                        <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Nurture them with content
+                        </p>
+                        <p class="text-[18px] pb-5">Keep your audience up to date with all kinds of content, helping
+                            them become more aware of your business.</p>
+                    </div>
+                    <div class="w-full md:w-[60%]">
+                        <img src="./Images/content-illustration-paper-phone.png" alt="Content Management illustration">
+                    </div>
+                </div>
+                <!-- Sixth Advertisement card -->
+                <div
+                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#F9EDD7] basis-full md:basis-[25%] rounded-[30px] gap-6 p-6">
+                    <div>
+                        <p class="text-[#E32426] font-semibold">ZOHO'S AI BOT</p>
+                        <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Let your products find
+                            their buyers</p>
+                        <p class="text-[18px] pb-5">Put Zoho's AI bot to use to show products your shoppers might be
+                            interested in using based on their past shopping behaviors.</p>
+                    </div>
+                    <div class="w-full md:w-[90%]">
+                        <img src="./Images/aibot-illustration-newspaper-robot.png" alt="AI Bot illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fifth Page -->
+    <section class="bg-[#D0EADC] pt-16 md:pt-[120px] pb-20 md:pb-[160px] page-5">
+        <div class="mx-4 sm:mx-10 md:mx-[60px]">
+            <!-- Build section-Integrations-with-logistics -->
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center flex-col text-center">
+                    <p class="cursive-p text-[#E32426] text-[28px]">Integrations</p>
+                    <p class="text-[16px] md:text-[26px] text-black font-semibold">What if you can build, manage and
+                        market</p>
+                    <p class="text-[28px] md:text-[52px] mb-4 md:mb-[20px] text-black font-bold w-full md:w-[60%]">your
+                        entire ecommerce
+                        business on one app</p>
+                </div>
+            </div>
+            <!-- Placeholder for additional content -->
+            <div class="h-[50vh] md:h-[80vh] flex items-center justify-center">
+                <!-- Placeholder for future content -->
+                <p class="text-center text-gray-600">Content coming soon...</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sixth Page -->
+    <section class="bg-[#01403D] pt-16 md:pt-[120px] pb-20 md:pb-[160px] ">
+        <div class="mx-4 sm:mx-10 lg:mx-[60px]">
+            <div class="md:flex justify-between items-end">
+                <div class="w-full lg:w-[48%] mb-10 md:mb-0">
+                    <p class="cursive-p text-[#01EE65] text-[28px] text-center md:text-left">Customer Support</p>
+                    <p
+                        class="text-[32px] md:text-[42px] lg:text-[52px] text-white font-semibold mb-5 text-center md:text-left">
+                        No
+                        problem too big, no question too small.</p>
+                    <p class="text-[18px] text-white  text-center md:text-left">We're committed to the
+                        growth of your ecommerce business, just as
+                        you are. Reach out to us when in need.
+                    </p>
+                </div>
+                <!-- Image Customer support -->
+                <div class="flex justify-center lg:justify-end">
+                    <img src="./Images/customer-support-rep.jpg" alt="Customer Support Representative"
+                        class="object-cover w-full md:w-[60%] rounded-[30px] hidden lg:inline">
+                </div>
+            </div>
+            <!-- Three large buttons -->
+            <div class="flex flex-col lg:flex-row justify-between py-8 gap-4">
+                <!-- 1st large button -->
+                <a href="#"
+                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    <span>Send us an email</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.75L21 12m0 0l-3.75 3.25M21 12H3" />
+                    </svg>
+                </a>
+                <!-- 2nd large button -->
+                <a href="#"
+                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    <span>Request a call back</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.75L21 12m0 0l-3.75 3.25M21 12H3" />
+                    </svg>
+                </a>
+                <!-- 3rd large button -->
+                <a href="#"
+                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    <span>Schedule a free demo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.75L21 12m0 0l-3.75 3.25M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Seventh Page -->
+    <section class="py-16 bg-white">
+        <div class="mx-4 sm:mx-10 lg:mx-[60px]">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <div class="text-center md:text-left">
+                    <p class="cursive-p text-[#E32426] text-[28px]">Market</p>
+                    <p class="text-[32px] md:text-[52px] text-black font-bold">From getting started to</p>
+                    <p class="text-[32px] md:text-[52px] text-black font-bold">
+                        what's next,<span class="text-[#00973F]">we've got it all.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+                <!-- Help Center Card -->
+                <div class="bg-white rounded-lg border-[1px] py-10 px-6 flex flex-col items-center hover:bg-[#F9EDD7]">
+                    <img src="./Images/help-centre.jpg" alt="Help Center Icon" class="h-24 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Help Center</h3>
+                    <p class="text-gray-600 mb-4 text-center">Find answers to all your questions using our dedicated
+                        articles and FAQs curated by our product experts.</p>
+                    <button class="mt-auto bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">Find
+                        answers</button>
+                </div>
+                <!-- Webinars Card -->
+                <div class="bg-white rounded-lg border-[1px] py-10 px-6 flex flex-col items-center hover:bg-[#F9EDD7]">
+                    <img src="./Images/webinars.jpg" alt="Webinars Icon" class="h-24 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Webinars</h3>
+                    <p class="text-gray-600 mb-4 text-center">Learn the best practices from our ecommerce and product
+                        experts via live and recorded webinars.</p>
+                    <button class="mt-auto bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">Join us
+                        live</button>
+                </div>
+                <!-- Blogs Card -->
+                <div class="bg-white rounded-lg border-[1px] py-10 px-6 flex flex-col items-center hover:bg-[#F9EDD7]">
+                    <img src="./Images/blogs.jpg" alt="Blogs Icon" class="h-24 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Blogs</h3>
+                    <p class="text-gray-600 mb-4 text-center">From ecommerce trends to marketing insights, get regular
+                        blog updates on the ins and outs of an ecommerce business.</p>
+                    <button class="mt-auto bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">Get
+                        insights</button>
+                </div>
+                <!-- Community Card -->
+                <div class="bg-white rounded-lg border-[1px] py-10 px-6 flex flex-col items-center hover:bg-[#F9EDD7]">
+                    <img src="./Images/community.jpg" alt="Community Icon" class="h-24 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Community</h3>
+                    <p class="text-gray-600 mb-4 text-center">Connect with your Zoho Commerce peers and discuss
+                        everything from ecommerce to product development.</p>
+                    <button class="mt-auto bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">Connect
+                        now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Eigth Page -->
+    <section class="py-16 min-h-screen">
+        <div
+            class="flex items-center justify-center text-center rounded-[30px] shadow-lg bg-[#01403D] relative mx-4 sm:mx-10 md:mx-[60px] h-[550px]">
+            <!-- Left Image -->
+            <div class="hidden md:block absolute top-0 left-0 w-[80px] md:w-[133px] h-[200px] md:h-[350px]">
+                <img src="./Images/left-img-basket.png" alt="Left Image">
+            </div>
+            <!-- Center Content -->
+            <div class="mb-10 w-full max-w-lg md:max-w-2xl flex items-center flex-col z-10">
+                <h1 class="text-white text-[32px] md:text-[47px] font-bold mb-10 md:mb-6">What better day to start doing
+                    business with the internet?</h1>
+                <a href="#"
+                    class="block w-full max-w-xs md:max-w-md border-[1px] border-black bg-green-500 hover:bg-green-400 text-white font-bold p-5 md:p-10 rounded-full transition duration-300 ease-in-out">Start
+                    today with Zoho Commerce</a>
+            </div>
+            <!-- Right Image -->
+            <div class="hidden md:block absolute bottom-0 right-0 w-[80px] md:w-[133px] ">
+                <img src="./Images/right-img-basket.png" alt="Right Image">
+            </div>
+        </div>
+    </section>
+    <!-- Last page -->
+    <section class="bg-black py-[60px]">
+        <!-- Images at the footer -->
+        <div class="flex flex-col justify-center items-center pb-10">
+            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images/zoho-commerce-demo-footer.jpg" alt="Demo Image" class="w-full h-auto object-cover">
+            </a>
+            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images/zoho-commerce-youtube-footer.jpg" alt="YouTube Image"
+                    class="w-full h-auto object-cover">
+            </a>
+            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images/zoho-survey-banner.jpg" alt="Survey Banner Image" class="w-full h-auto object-cover">
+            </a>
+        </div>
+        <!-- Footer links -->
+        <div
+            class="container px-4 md:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-white text-sm">
+            <div>
+                <h3 class="font-bold mb-4">Features</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Inventory Management</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Social Selling</a></li>
+                    <li><a href="#">Product Recommendations</a></li>
+                    <li><a href="#">Automated Emails</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Buy Now Button</a></li>
+                    <li><a href="#">Product Reviews</a></li>
+                    <li><a href="#">All Features</a></li>
+                    <li><a href="#">Book a Demo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Insights & Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Live Webinars</a></li>
+                    <li><a href="#">Developer Resources</a></li>
+                    <li><a href="#">API Guide</a></li>
+                    <li><a href="#">User Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Explore More</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Build Your Store</a></li>
+                    <li><a href="#">Manage Store Operations</a></li>
+                    <li><a href="#">Market Your Store</a></li>
+                    <li><a href="#">Build Landing Pages</a></li>
+                    <li><a href="#">Ecommerce Inventory</a></li>
+                    <li><a href="#">Selling Online</a></li>
+                    <li><a href="#">Ecommerce Website Builder</a></li>
+                    <li><a href="#">Ecommerce Platform</a></li>
+                    <li><a href="#">Sell Products Online</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Facebook Integration</a></li>
+                    <li><a href="#">The Complete Ecommerce Store</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Discover</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Customer Stories</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Comparison</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">Ecwid</a></li>
+                    <li><a href="#">WooCommerce</a></li>
+                    <li><a href="#">Magento Open Source</a></li>
+                    <li><a href="#">BigCommerce</a></li>
+                    <li><a href="#">Wix</a></li>
+                </ul>
+                <div class="mt-6">
+                    <h3 class="font-bold mb-4">Connect with us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="text-2xl"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Collaborate</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Hire a Specialist</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-100">
+        <!-- Top Section -->
+        <div class="border-b py-2 flex flex-col sm:flex-row justify-between items-center px-4">
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:support@zohocommerce.com" class="text-blue-500 flex items-center">
+                    <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
+                </a>
+                <a href="mailto:marketing@zohocommerce.com" class="text-blue-500 flex items-center">
+                    <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 mt-2 sm:mt-0">
+                <i class="bx bx-globe"></i>
+                <select class="bg-gray-100 border-none outline-none">
+                    <option value="en">English</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="py-12 mx-4">
+            <div class="container mx-auto flex flex-row justify-center items-center">
+                <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
+                    placeholder="Search for product overviews, FAQs, and more...">
+                <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
+                    <i class="bx bx-search text-[20px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="bg-gray-100 py-6">
+            <div class="hidden md:flex container mx-auto flex-wrap justify-center space-x-4 text-sm">
+                <a href="#" class="hover:underline">Zoho Home</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+                <a href="#" class="hover:underline">Security</a>
+                <a href="#" class="hover:underline">Compliance</a>
+                <a href="#" class="hover:underline">IPR Complaints</a>
+                <a href="#" class="hover:underline">Anti-spam Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Cookie Policy</a>
+                <a href="#" class="hover:underline">GDPR Compliance</a>
+                <a href="#" class="hover:underline">Abuse Policy</a>
+            </div>
+            <div class="text-center text-sm mt-4">
+                &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

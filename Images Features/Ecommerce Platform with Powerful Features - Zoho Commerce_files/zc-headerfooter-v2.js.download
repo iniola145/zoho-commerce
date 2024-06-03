@@ -1,0 +1,422 @@
+$(window).resize(function () {
+    if( $(window).width() < 768){
+        zwcGlobalMenuClose();
+    }
+  });
+  const zwcRemoveGlobalHeaderProduct = ['catalyst','trainercentral','community','zohobigin','zillum','arattai','cliqtrix','iot'];
+  const zwcRemoveGlobalHeaderLang = ['zh-hant','hi-in','hi','fr-ca','zh-hans','ta-in','ta','jp'];
+  
+  if($(window).width() > 767){
+    let getJsonFile = "https://www.zohowebstatic.com/sites/zweb/json/global-menu-v2.json";
+    if(predomain){
+      getJsonFile = "https://"+_preZ+"/sites/zweb/json/global-menu-v2.json";
+    }
+    if(!zwcRemoveGlobalHeaderProduct.includes(customvar.productName)){
+        if(!zwcRemoveGlobalHeaderLang.includes(currentUrlLang)){
+            $.getJSON(getJsonFile, function(data) {
+                globalMenuData(data.globalMenuData);
+            }).fail(function() {
+                throw {
+                    name: "FileError",
+                    message: "An error has occurred while fetching the json data"
+                };
+            });
+            $('.zgh-nav').append('<ul class="zwc-relatedPrd-wrap"></ul>');
+        }
+    }
+  }
+  
+  const zwcGlobalMenuClose = () => {
+    $('body').removeClass('zwc-body-hidden');
+    $('.zwc-all-product').removeClass('active');
+    $('.zwc-global-menu-container').removeClass('active');
+    $('.zwc-globalmenu-open').remove();
+  }
+  let productVisible = true;
+  function productVisibleCheck(showOnlyProduct){
+   if((showOnlyProduct.includes('EU') && customvar.countryEu.includes(CountryCode)) || (showOnlyProduct.includes('APAC') && customvar.countryApac.includes(CountryCode)) || (showOnlyProduct.includes('MEA') && customvar.meaList.includes(CountryCode)) || (showOnlyProduct.includes('AFRICA') && customvar.africaRegList.includes(customvar.countries[0][(customvar.countries[1].indexOf(CountryCode))])) || showOnlyProduct.includes(CountryCode) ) {
+        productVisible = true;
+    }
+    else{
+        productVisible = false;
+    }
+  
+  }
+  
+  const globalMenuData = (data) => {
+    let curUrlLangValPrefix =  currentUrlLang == '' ? currentUrlLang : '/'+currentUrlLang;
+    let curUrlLangValSuffix ='';
+    const jsonLangKey = currentUrlLang == '' ? 'en' : currentUrlLang;
+    const otherDetailsContent = data.otherDetails;
+  
+  
+    $('.zw-global-header').append('<div class="zwc-global-menu-container"><ul class="zwc-tab-category"><li class="active">'+otherDetailsContent.apps[jsonLangKey]+'</li><li>'+otherDetailsContent.suites[jsonLangKey]+'</li><li>Zoho One</li><li>Marketplace</li><li>'+otherDetailsContent.mobileApps[jsonLangKey]+'</li><li id="zwc-all-prod-link"><a href="'+curUrlLangValPrefix+'/all-products.html?src=zGlobalAllProducts">'+otherDetailsContent.exploreAllProducts[jsonLangKey]+'</a></li></ul><div class="zwc-gh-close-btn"><svg id="closeicon-svg" width="10" height="10" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 21.77"><defs><style>.cls-5{fill:none;stroke:#525252;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style></defs><title>close</title><path id="Union_1" data-name="Union 3" class="cls-5" d="M11,10.82,1.5,20.27,11,10.82,1.63,1.5,11,10.82l9.24-9.2L11,10.82l9.5,9.45Z"></path></svg></div><div class="zwc-tab-category-wrap"> <div class="zwc-tab-category-list zwc-all-products-tab active"><div class="zwc-all-products-list"><div class="zwc-product-categories"><ul></ul></div></div></div><div class="zwc-tab-category-list zwc-suites-tab"><div class="zwc-suites-flex"></div></div><div class="zwc-tab-category-list zwc-zohoone-tab"><div class="zwc-gh-flex"><div class="zwc-bundle-content"><span class="zgh-i-zohoone">&nbsp;</span><div class="zwc-one-tab-details"><span>'+otherDetailsContent.zohoOneTag[jsonLangKey]+'</span><h3>Zoho One</h3><span class="zwc-os-tag">'+otherDetailsContent.zohoOneSubDescription[jsonLangKey]+'</span><p>'+otherDetailsContent.zohoOneDescription[jsonLangKey]+'</p><a href="'+curUrlLangValPrefix+'/one/?src=zGlobalAllProducts" target="_blank" class="zwc-category-cta" rel="noopener">'+otherDetailsContent.tryZohoOne[jsonLangKey]+'</a></div></div><div class="zwc-bundle-img"><img width="530" height="394" src="/sites/zweb/images/zoho_general_pages/zh-one-poster.png" alt="Zoho One" ></div></div></div><div class="zwc-tab-category-list zwc-marketplace-tab"><div class="zwc-gh-flex"><div class="zwc-bundle-content"><img src="https://www.zohowebstatic.com/sites/zweb/images/productlogos/marketplace.svg" width="200" height="45" alt="Zoho Marketplace"><p>'+otherDetailsContent.marketplaceDescription[jsonLangKey]+'</p><a href="https://marketplace.zoho.com/home?src=zGlobalAllProducts" target="_blank" class="zwc-category-cta zwc-explore-marketplace-cta" rel="noopener">'+otherDetailsContent.exploreMarketplace[jsonLangKey]+'</a></div><div class="zwc-bundle-img"><img width="680" height="576" src="/sites/zweb/images/zoho_general_pages/zh-marketplace.png" alt="Marketplace" ></div></div></div><div class="zwc-tab-category-list zwc-mobile-apps-tab"><div class="zwc-gh-flex"><div class="zwc-bundle-content"><h3>'+otherDetailsContent.mobileApps[jsonLangKey]+'</h3><p>'+otherDetailsContent.mobileAppsDescription[jsonLangKey]+'</p><a href="/mobile-apps.html?src=zGlobalAllProducts" target="_blank" class="zwc-category-cta zwc-explore-allapps" rel="noopener">'+otherDetailsContent.exploreAllProducts[jsonLangKey]+'</a></div><div class="zwc-bundle-img"><img width="378" height="530" src="/sites/zweb/images/zoho_general_pages/zh-mobileapp.png" alt="Mobile Apps" ></div></div></div></div></div>');
+  
+  
+  
+    for(let i in Object.keys(data.categoryDetails)){
+  
+        const catagoryName = data.categoryDetails[Object.keys(data.categoryDetails)[i]]['content'][jsonLangKey];
+        const catagoryClassName = data.categoryDetails[Object.keys(data.categoryDetails)[i]]['content']['en'].replace(/[^\w]/g, '').toLowerCase();
+       
+        // All product details, Apps Tab
+        if(catagoryName){
+            $('.zwc-product-categories ul').append('<li data-class="zwc-categoty-'+catagoryClassName+'">'+catagoryName+'</li>');
+            $('.zwc-all-products-list').append('<div class="zwc-product-details zwc-categoty-'+catagoryClassName+'"><div class="zwc-product-list-container"></div></div>');
+            const categoryProductsList = data.categoryDetails[Object.keys(data.categoryDetails)[i]].categoryProducts;
+            let $prdListHtml = '';
+            for (let j in categoryProductsList) {
+                const productDetails = data.allProductDetails[categoryProductsList[j]];
+                const productDesciption = productDetails['productDesc'][jsonLangKey];
+                const productTag = (productDetails.productVersion ) ? '<span class="zwc-product-tag zwc-tag-'+productDetails.productVersion.toLowerCase()+'">'+data.otherDetails[productDetails.productVersion.toLowerCase()][jsonLangKey]+'</span>' : '';
+                const showOnlyProduct = productDetails.showOnlyRegion;
+                // const hideOnlyProduct = productDetails.hideOnlyRegion;
+  
+                (showOnlyProduct != undefined) ? productVisibleCheck(showOnlyProduct) : productVisible = true;
+  
+                if(categoryProductsList[j] == 'site24x7'){
+                    curUrlLangValSuffix = currentUrlLang;
+                    curUrlLangValPrefix = '';
+                }
+                else{
+                    curUrlLangValSuffix = '';
+                    curUrlLangValPrefix = currentUrlLang == '' ? currentUrlLang : '/'+currentUrlLang;
+                }
+                if((productDesciption != undefined) && productVisible){
+                        if(productDetails.productName == 'Notebook' && currentUrlLang == ''){
+                            productDetails.productUrl = '/notebook/business-solution.html?src=zGlobalAllProducts';
+                        }
+                        $prdListHtml += '<div class="zwc-product-list zwc-product-'+categoryProductsList[j].replace(/[^\w]/g, '').toLowerCase()+'"><span class="zgh-i-'+categoryProductsList[j].replace(/[^\w]/g, '').toLowerCase()+'">&nbsp;</span><div class="zwc-product-content">'+productTag+'<h4>'+productDetails.productName+'</h4><p>'+(productDesciption == '' ? productDetails['productDesc']['en'] : productDesciption)+'</p></div><a href="'+( productDesciption == '' ? productDetails.productUrl : curUrlLangValPrefix+productDetails.productUrl+curUrlLangValSuffix )+'?src=zGlobalAllProducts">&nbsp;</a></div>';
+                }
+  
+            }
+  
+            // Category suite products
+            const bundleProducts = data.categoryDetails[Object.keys(data.categoryDetails)[i]].categoryBundleProducts;
+           
+            if(bundleProducts){ 
+                const bundlePrdDetails = data.allProductDetails[bundleProducts];
+                const bundlePrdDescription = bundlePrdDetails['productDesc'][jsonLangKey];
+                const showOnlyBundleProduct = bundlePrdDetails.showOnlyRegion;
+                (showOnlyBundleProduct != undefined) ? productVisibleCheck(showOnlyBundleProduct) : productVisible = true;
+                if((bundlePrdDescription != undefined) && productVisible){
+                    $prdListHtml += '<div class="zwc-product-list zwc-suite-product zwc-product-'+bundleProducts.replace(/[^\w]/g, "").toLowerCase()+'"><span class="zgh-i-'+bundleProducts.replace(/[^\w]/g, "").toLowerCase()+'">&nbsp;</span><div class="zwc-product-content"><span class="zwc-suite-tag">'+data.otherDetails['suites'][jsonLangKey]+'</span><h4>'+bundlePrdDetails.productName+'</h4><p>'+(bundlePrdDescription == '' ? bundlePrdDetails['productDesc']['en'] : bundlePrdDescription)+'</p></div><a href="'+( bundlePrdDescription == '' ? bundlePrdDetails.productUrl : curUrlLangValPrefix+bundlePrdDetails.productUrl )+'?src=zGlobalAllProducts">&nbsp;</a></div>';
+                }
+            }
+  
+            $('.zwc-categoty-'+catagoryClassName+' .zwc-product-list-container').append($prdListHtml);
+            
+        }
+  
+  
+    }
+  
+  
+    $('.zwc-product-categories').append('<a class="zwc-explore-all-prd" href="'+curUrlLangValPrefix+'/all-products.html?src=zGlobalAllProducts">'+data.otherDetails['exploreAllProducts'][jsonLangKey]+'</a>')
+        // Suites Tab
+        const suitesPrdList = data.otherDetails.suitesList;
+        let $suitesdPrdHtml = '';
+        for(let k in suitesPrdList){
+            const suitesDetails = data.allProductDetails[suitesPrdList[k]];
+            const suitesDesciption = suitesDetails['productDesc'][jsonLangKey];
+            const tryNowText = data.otherDetails['tryNow'][jsonLangKey];
+            const showOnlySuitProduct = suitesDetails.showOnlyRegion;
+            (showOnlySuitProduct != undefined) ? productVisibleCheck(showOnlySuitProduct) : productVisible = true;
+            if((suitesDesciption != undefined) && productVisible){
+                $suitesdPrdHtml += '<div class="zwc-suites-list zwc-product-list zwc-suite-product zwc-product-'+suitesPrdList[k].replace(/[^\w]/g, "")+'"><span class="zgh-i-'+suitesPrdList[k].replace(/[^\w]/g, "").toLowerCase()+'">&nbsp;</span><div class="zwc-product-content"><h4>'+suitesDetails.productName+'</h4><p>'+(suitesDesciption == '' ? suitesDetails['productDesc']['en'] : suitesDesciption)+'</p><span class="zwc-trynow-cta">'+tryNowText+'</span></div><a href="'+( suitesDesciption == '' ? suitesDetails.productUrl : curUrlLangValPrefix+suitesDetails.productUrl )+'?src=zGlobalAllProducts">&nbsp;</a></div>';
+            }
+        }
+        $('.zwc-suites-flex').append($suitesdPrdHtml);
+  
+        // Related product 
+  
+        let $relatedPrdHtml = '';
+        let $homeRelatedLinks = '';
+        if((customvar.productName == 'home')){
+            const customersPageOtherLang = ['es-xl', 'de', 'fr', 'nl', 'vi', 'zh-hans'];
+            const blogPageOtherLang = ['es-xl', 'pt-br', 'fr', 'th', 'ar', 'id', 'vi'];
+            const eventsPageOtherLang = ['th', 'id', 'vi'];
+            let zwcNewsletterLink = '';
+            let zwcEnterpriseLink  = '';
+            if(currentUrlLang == 'th' || currentUrlLang == 'id'){
+                zwcNewsletterLink = '<li><a href="'+curUrlLangValPrefix+'/newsletter.html?src=zGlobalTopMenu" >'+Drupal.t('Newsletter')+'</a></li>';
+            }
+            
+            if(CountryCode == 'US'){
+                zwcEnterpriseLink = '<li><a href="/enterprise/?src=zGlobalTopMenu">Enterprise</a></li>';
+            }
+            if(currentUrlLang == 'fr'){
+                zwcEnterpriseLink = '<li><a href="/fr/enterprise/?src=zGlobalTopMenu">ETI-Enterprise</a></li>';
+            }
+            
+
+
+            $homeRelatedLinks = zwcEnterpriseLink+'<li><a href="'+(customersPageOtherLang.includes(currentUrlLang) ? curUrlLangValPrefix : '') +'/customers.html?src=zGlobalTopMenu">Customers</a></li><li class="zwc-common-dropdown"><div class="zwc-company-dropdown">'+Drupal.t('Company')+'</div><ul class="zwc-company-lists"><li><a href="/aboutus.html?src=zGlobalTopMenu">'+Drupal.t('About us')+'</a></li><li><a href="'+curUrlLangValPrefix+'/ourstory.html?src=zGlobalTopMenu">'+Drupal.t('Our story')+'</a></li><li><a href="/rural-revival/?src=zGlobalTopMenu">'+Drupal.t('Rural revival')+'</a></li><li class="zwc-separationline">&nbsp;</li><li><a href="/press.html?src=zGlobalTopMenu">'+Drupal.t('Press')+'</a></li><li><a href="'+(eventsPageOtherLang.includes(currentUrlLang) ? curUrlLangValPrefix : '') +'/events.html?src=zGlobalTopMenu">'+Drupal.t('Events')+'</a></li><li class="zwc-separationline">&nbsp;</li><li><a href="/careers/?src=zGlobalTopMenu">'+Drupal.t('Careers')+'</a></li><li><a href="/humans-of-zoho/?src=zGlobalTopMenu">'+Drupal.t('Humans of Zoho')+'</a></li><li><a href="/the-long-game/?src=zGlobalTopMenu">'+Drupal.t('The Long Game')+'</a></li></ul></li><li class="zwc-common-dropdown"><div class="zwc-more-links"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div><ul class="zwc-more-link-list"><li><a href="'+(customersPageOtherLang.includes(currentUrlLang) ? curUrlLangValPrefix : '') +'/customers.html?src=zGlobalTopMenu" >'+Drupal.t('Customers')+'</a></li><li><a href="https://www.zoho.com/blog'+(blogPageOtherLang.includes(currentUrlLang) ? curUrlLangValPrefix : '')+'/?src=zGlobalTopMenu" >'+Drupal.t('Blog')+'</a></li><li><a href="https://community.zoho.com/?src=zGlobalTopMenu" >'+Drupal.t('Community')+'</a></li>'+zwcNewsletterLink+'<li class="zwc-separationline">&nbsp;</li><li><a href="https://www.zoho.com/partners/?src=zGlobalTopMenu" >'+Drupal.t('Partner with us')+'</a></li><li><a href="https://help.zoho.com/portal/en/home/?src=zGlobalTopMenu" target="_blank" rel="noopener">'+Drupal.t('Support')+'</a></li><li><a href="'+curUrlLangValPrefix+'/contactus.html?src=zGlobalTopMenu" >'+Drupal.t('Contact us')+'</a></li></ul></li>';
+  
+        }
+        else{
+            
+            if(data.allProductDetails[customvar.productName] != undefined){
+                const relatedPrdList = data.allProductDetails[customvar.productName].relatedProducts;
+                if(relatedPrdList){
+                        for(let l in relatedPrdList){
+                            const relatedprdDetails = data.allProductDetails[relatedPrdList[l]];
+                            const relatedprdDesciption = relatedprdDetails['productDesc'][jsonLangKey];
+                            const showOnlyRelatedProduct = relatedprdDetails.showOnlyRegion;
+                            (showOnlyRelatedProduct != undefined) ? productVisibleCheck(showOnlyRelatedProduct) : productVisible = true;
+                            if((relatedprdDesciption != undefined) && productVisible){
+                                $relatedPrdHtml +=  '<li class="zwc-product-'+relatedPrdList[l].replace(/[^\w]/g, "")+'"><a href="'+( relatedprdDesciption == '' ? relatedprdDetails.productUrl : curUrlLangValPrefix+relatedprdDetails.productUrl )+'?src=zGlobalRelatedProducts">'+relatedprdDetails.productName+'</a><p>'+(relatedprdDesciption == '' ? relatedprdDetails['productDesc']['en'] : relatedprdDesciption)+'</p></li>';
+                            }
+  
+                        }
+                }
+            }
+  
+        }
+  
+  
+        let zwcMenuName =  otherDetailsContent.allProducts[jsonLangKey];
+        if(customvar.productName == 'home'){
+            zwcMenuName = otherDetailsContent.products[jsonLangKey];
+        }
+
+       $('ul.zwc-relatedPrd-wrap').append($relatedPrdHtml+'<li class="zwc-all-product">'+zwcMenuName+'</li>'+$homeRelatedLinks);
+  
+    // Related product tooltip script
+  
+    const tooltips = document.querySelectorAll('.zgh-nav > ul > li > p');
+    window.onmousemove = function(e) {
+        let x = (e.clientX + 0) + 'px',
+            y = (e.clientY + 17) + 'px';
+        for (let i = 0; i < tooltips.length; i++) {
+            if ($(tooltips[i]).parent().is(":hover")) {
+                tooltips[i].style.top = y;
+                tooltips[i].style.left = x;
+            } else {
+                tooltips[i].style.top = "0";
+                tooltips[i].style.left = "0";
+            }
+        }
+    };
+
+    if(customvar.zohouser){
+        customvar.globalHeaderLogged();
+      }
+  }
+  
+  
+  // Logged User's DC based product hide
+  customvar.globalHeaderLogged = function(){
+    Object.entries(customvar.dcObj).forEach(([key,value]) => {
+        if(dcdomainOne == value.domain){
+            if(value.notavailable){
+                for(let i = 0; i < value.notavailable.length; i++){
+                    $('.zw-global-header .zwc-product-'+(value.notavailable[i].replace(/[^\w]/g, ""))).remove();
+                    if(value.notavailable[i] == 'analytics'){
+                        $('.zw-global-header .zwc-product-embeddedbi').remove();
+                    }
+                }
+               
+            }
+        }
+    });
+    
+    for(let i = 0; i < $('.zwc-product-details').length; i++){
+        const prdVisibleLength = $('.zwc-product-details').eq(i).find('.zwc-product-list').length;
+        const removeClassName = $('.zwc-product-details').eq(i).attr('class').split(' ')[1];
+        if(prdVisibleLength == 0){
+            $('.zwc-product-categories ul li[data-class="'+removeClassName+'"]').remove();
+        }
+    }
+  }
+
+  
+  $(document).ready(function(){
+
+    const zwcPromoBannerHeight =  $('header .zw-promo-top').height();
+    let zwcBannerLength = '';
+    if(zwcPromoBannerHeight > 0){
+        zwcBannerLength = 1;
+    }
+    if(zwcPromoBannerHeight > 70){
+        zwcBannerLength = 2;
+    }
+    if(zwcPromoBannerHeight > 120){
+        zwcBannerLength = 3;
+    }
+    if(zwcBannerLength){
+        $('body').addClass('zwc-banner-length-'+zwcBannerLength);
+    }
+  
+    $(document).on('click', '.zwc-all-product', function() {
+        if(!$(this).hasClass('active')){
+            $(this).addClass('active');
+            $('.zwc-global-menu-container').addClass('active');
+            $('.zwc-product-categories li').eq(0).trigger('click');
+            $('body').addClass('zwc-body-hidden')
+            $('main').append('<div class="zwc-globalmenu-open"></div>');
+            searchHide();
+        }
+        else{
+            zwcGlobalMenuClose();
+        }
+        $('.zwc-common-dropdown').removeClass('active');
+    });
+    $(document).on('click', '.zwc-gh-close-btn,.zwc-globalmenu-open', function() {
+        zwcGlobalMenuClose();
+    });
+   
+    $(document).on('click', '.zwc-product-categories ul li', function() {
+        $('.zwc-product-categories ul li').removeClass('active')
+        $(this).addClass('active');
+        $('.zwc-product-details').removeClass('active');
+        $('.zwc-product-details.'+$(this).attr('data-class')).addClass('active');
+    });
+    
+    $(document).on('click', '.zwc-tab-category li', function() {
+        if( $(this).find('a').length == 0){
+            $('.zwc-tab-category li').removeClass('active');
+            $('.zwc-tab-category-list').removeClass('active');
+            $(this).addClass('active');
+            $('.zwc-tab-category-list').eq($(this).index()).addClass('active');
+        }
+        
+    });
+  
+    $(document).on(selectEvents, 'body', function(event) {
+        event.stopPropagation();
+        if (!$('.zwc-common-dropdown').is(event.target) && $(event.target).parents('.zwc-common-dropdown').length === 0 ) {
+            $('.zwc-common-dropdown').removeClass('active');
+        }
+  
+    });
+    $(document).on('click', '.zwc-common-dropdown', function(e) {
+        zwcGlobalMenuClose();
+        if($(this).hasClass('active') && !$('.zwc-common-dropdown ul').is(e.target) && $('.zwc-common-dropdown ul').has(e.target).length === 0){
+            $(this).removeClass('active');
+        }
+        else{
+            $('.zwc-common-dropdown').removeClass('active');
+            $(this).addClass('active');
+           
+        }
+    });
+  
+  
+  
+        /*  Search Starts */
+        $(document).on('click', '.zgh-search-icon', function() {
+            
+            if ($('.zgh-search').hasClass('active')) {
+                $('.zgh-search').removeClass('active');
+                $('.zgh-search-field').blur().val('');
+            }
+            else{
+                $('.zgh-search').addClass('active');
+                $('.zgh-search-field').focus().val('');
+            }
+            
+        });
+  
+        function searchHide() {
+            if ($('.zgh-search').hasClass('active')) {
+                $('.zgh-search').removeClass('active');
+                $('.zgh-search-field').blur().val('');
+            }
+        }
+        $(document).on(selectEvents, '.zgh-search-clear,.zgh-search-overlay', function() {
+            searchHide();
+        });
+        $(document).on('click', '.zgh-search-btn', function() {
+            $('#zgh-search-action').submit();
+        });
+        $(document).on('submit', '#zgh-search-action', function(e) {
+            e.preventDefault();
+            var formval = $('#zgh-search-query').val().trim();
+            var actionURL
+           if (currentUrlLang == "") {
+                    if(customvar.outproduct.indexOf(customvar.productName) > -1){
+                         actionURL = 'https://www'+'.zoho'+'.com/search-results.html';
+                    }else{
+                        actionURL = window.location.origin + '/search-results.html';
+                    }
+  
+                    if(customvar.productName == 'trainercentral'){
+                        actionURL = window.location.origin + '/search-results.html';
+                    }
+  
+                } else {
+                    actionURL = window.location.origin + '/' + currentUrlLang + '/' + 'search-results.html';
+                }
+  
+                
+  
+  
+            if (formval != "") {
+                window.location = actionURL + "?query=" + encodeURIComponent(formval);
+            }
+  
+            
+        });
+        $(document).keyup(function(e) {
+            if ((e.keyCode === 27)) {
+                searchHide();
+            }
+        });
+        $(window).scroll(function() {
+            var thisScroll = $(this).scrollTop();
+            if (thisScroll > 100) {
+                searchHide();
+                if((customvar.productName == 'home')){
+                    $('.zwc-common-dropdown').removeClass('active');
+                }
+            }
+        });
+        /*  Search Ends */
+        /*  Localization Starts */
+        $(document).on('mouseenter touchstart', '.zgh-localization', function() {
+            var that = $(this);
+            that.addClass('active');
+        });
+        $(document).on('mouseleave', '.zgh-localization', function() {
+            var that = $(this);
+            that.removeClass('active');
+        });
+        if (typeof detectedLangNew != 'undefined') {
+            var _incount = 0;
+            var intervar = setInterval(function() {
+                if (detectedLangNew.length > 0) {
+                    clearInterval(intervar);
+                    $('.zgh-localization').addClass('init');
+                } else if (_incount > 50) {
+                    clearInterval(intervar);
+                }
+                _incount++;
+            }, 1000);
+        }
+        /*  Localization Ends */
+  
+    /*  Account Starts*/
+    $(document).on(selectEvents, '.zgh-userAvatar', function() {
+        var that = $(this);
+        that.parent().toggleClass('active');
+    });
+    /*  Account Ends */
+  
+  
+    $(document).on(selectEvents, 'body', function(event) {
+        event.stopPropagation();
+        var container = $('.zgh-userPanel');
+        if (!container.is(event.target) && container.has(event.target).length === 0) {
+            container.removeClass('active');
+        }
+    });
+    $(document).on(selectEvents, 'body', function(event) {
+        event.stopPropagation();
+        var container = $('.zgh-localization');
+        if (!container.is(event.target) && container.has(event.target).length === 0) {
+            container.removeClass('active');
+        }
+    });
+  
+  });
