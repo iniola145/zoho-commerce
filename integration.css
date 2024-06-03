@@ -43,30 +43,49 @@
 .image:nth-child(3) { animation-delay: 0.6s; }
 /* ... and so on for each logo ... */
 
+
+/* DROPDOWNS.............. */
 .second .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.second .dropdown-content {
+.second .dropdown-content1 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  min-height: 430px;
+}
+.second .dropdown-content2, .second .dropdown-content3, .second .dropdown-content4, .second .dropdown-content5, .second .dropdown-content6 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-height: 100px;
 }
 
-.second .dropdown-content a {
+.second .dropdown-content1 a,.second .dropdown-content2 a, .second .dropdown-content3 a, .second .dropdown-content4 a, .second .dropdown-content5 a, .second .dropdown-content6 a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.second .dropdown-content a:hover {background-color: #f1f1f1}
+.second .dropdown-content1 a:hover, .second .dropdown-content2 a:hover, .second .dropdown-content3 a:hover, .second .dropdown-content4 a:hover, .second .dropdown-content5 a:hover, .second .dropdown-content6 a:hover {
+  color: rgba(0, 119, 255, 0.767);
+}
 
-.second .dropdown:hover .dropdown-content {
+.second .dropdown-content1 a:hover,.second .dropdown-content2 a:hover, .second .dropdown-content3 a:hover, .second .dropdown-content4 a:hover, .second .dropdown-content5 a:hover, .second .dropdown-content6 a:hover {background-color: #f1f1f1}
+
+.second .dropdown:hover .dropdown-content1 {
+  display: flex;
+}
+.second .dropdown:hover .dropdown-content2, .second .dropdown:hover .dropdown-content3, .second .dropdown:hover .dropdown-content4, .second .dropdown:hover .dropdown-content5, .second .dropdown:hover .dropdown-content6 {
   display: block;
 }
 
@@ -84,6 +103,20 @@
   color: white;
   display: inline-block;
   margin-left: 5px;
+}
+
+.second .dropdown .dropdown-content1 .see_all {
+  position: absolute;
+  bottom: 15px;
+  left: 100px;
+  width: 140px;
+  border: 1px solid;
+  padding: 12px;
+}
+
+.second .dropdown .dropdown-content1 .see_all:hover {
+  color: rgba(0, 119, 255, 0.767);
+  cursor: pointer;
 }
 
 /* Categories */
