@@ -15,45 +15,55 @@
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body class="w-fit">
     <!-- Navigation menu -->
     <nav
         class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
-        <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="first h-[44px]"></a>
-        <a href="#" class="inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
+        <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
+        <a href="#" class="nav inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
         <!-- Menu options -->
         <ul class="hidden md:block space-x-4 lg:space-x-11">
-            <li class="inline-block "><a href="#" class="text-[13px] lg:text-[15px]">Featureslll</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Pricing</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Themes</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Integrations</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Customers</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Resources</a></li>
-            <li class="inline-block"><a href="#" class="text-[13px] lg:text-[15px]">Support</a></li>
+            <li class="nav inline-block "><a href="#" class="move text-[13px] lg:text-[15px]">Features</a>
+            </li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Pricing</a>
+            </li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Themes</a>
+            </li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Integrations</a></li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Customers</a>
+            </li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Resources</a>
+            </li>
+            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Support</a>
+            </li>
         </ul>
     </nav>
     <!-- First page -->
     <section class="py-[90px] md:py-[140px] px-4 sm:px-10 md:px-10 lg:px-20 w-full md:w-fit page-1">
         <div class="py-8">
             <p
-                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:text-left font-black w-full sm:w-[85%] md:w-[75%]">
+                class="first-p text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:text-left font-black w-full sm:w-[85%] md:w-[75%]">
                 Do business in the world's busiest market, the internet.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 items-center">
-                <button
-                    class="bg-[#01EE65] flex items-center py-[17px] px-[36px] md:p-4 border border-solid border-black rounded-[30px] my-4 sm:my-10">
-                    Sign up - it's free
-                </button>
-                <button class="flex items-center p-4 border border-solid border-black rounded-[30px] h-max">
-                    Schedule a free demo
-                </button>
+            <div class="first-b flex flex-col sm:flex-row gap-4 sm:gap-10 items-center">
+                <a href="#"><button
+                        class="store-btn duration-500  bg-[#01EE65] flex items-center py-[17px] px-[36px] md:p-4 border border-solid border-black rounded-[30px] my-4 sm:my-10">
+                        Sign up - it's free
+                    </button></a>
+                <a href="#"><button
+                        class="demo-btn flex items-center p-4 border border-solid border-black rounded-[30px] h-max">
+                        Schedule a free demo
+                    </button></a>
             </div>
         </div>
-        <div class="flex flex-col-reverse md:flex-row bg-[#D8F6E6] rounded-[20px] h-auto xl:h-[45vh] justify-between">
+        <div
+            class="first-sub-container flex flex-col-reverse md:flex-row bg-[#D8F6E6] rounded-[20px] h-auto xl:h-[45vh] justify-between">
             <!-- Zoho commerce intro -->
-            <div class="w-full md:w-[40%] p-6 sm:p-10 text-[#003F3C]">
+            <div class="first-sub-c1 w-full md:w-[40%] p-6 sm:p-10 text-[#003F3C]">
                 <p class="text-xl sm:text-2xl font-medium">
                     "Zoho Commerce is an excellent ecommerce platform for our growth. It's a world-class product at an
                     affordable price."
@@ -62,7 +72,7 @@
                 <p class="md:text-left text-center">Director, Zoho</p>
             </div>
             <!-- Second zoho icons -->
-            <div class="flex flex-row md:flex-col pt-8 px-2 md:py-6 sm:py-10 justify-between">
+            <div class="first-sub-c1 flex flex-row md:flex-col pt-8 px-2 md:py-6 sm:py-10 justify-between">
                 <div class="flex flex-col justify-center md:flex-row md:justify-between gap-4 items-center">
                     <img src="./Images/growth-stats-heart.jpg" alt="growth-stats-heart">
                     <div class="flex flex-col items-center md:items-start">
@@ -86,17 +96,17 @@
                 </div>
             </div>
             <!-- Third zoho image of CEO -->
-            <div class="rounded-[20px] max-xl:basis-[40%] w-full md:w-auto">
+            <div class="first-sub-c1 text-[20px] max-xl:basis-[40%] w-full md:w-auto">
                 <img src="./Images/house-bg-img.png" class="object-cover w-[full] h-full" alt="">
             </div>
         </div>
     </section>
 
     <!-- Second Page -->
-    <section class="bg-[#003F3C] pt-20 md:pt-[120px] pb-20 md:pb-[160px] page-2">
+    <section class="bg-[#003F3C] pt-20 md:pt-[120px] pb-20 md:pb-[160px]">
         <div class="mx-4 md:mx-[60px]">
             <!-- Build section1 -->
-            <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="second-div flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-8 md:mb-0">
                     <p class="cursive-p text-[#01EE65] text-lg md:text-[28px]">Build</p>
                     <p class="text-3xl md:text-[34px] lg:text-[40px] text-white font-medium">Build an online store that
@@ -106,14 +116,15 @@
                 </div>
                 <!-- Button -->
                 <a href="#"
-                    class="text-white mt-8 rounded-full border border-[#cdddd5] py-2 px-4 sm:py-3 sm:px-5 md:mt-0 md:py-3 md:px-6 lg:py-4 lg:px-7 md:mx-4 lg:mx-10 xl:mx-12">
+                    class="hover:-translate-y-[10px] hover:border-white duration-500 text-white mt-8 rounded-full border border-[#cdddd55b] py-2 px-4 sm:py-3 sm:px-5 md:mt-0 md:py-3 md:px-6 lg:py-4 lg:px-7 md:mx-4 lg:mx-10 xl:mx-12">
                     Build an online store today
                 </a>
             </div>
 
             <!-- Image section 1 -->
             <div class="flex justify-center mt-16">
-                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes"
+                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
             </div>
             <!-- Text section 1 -->
             <div class="mt-10">
@@ -130,7 +141,8 @@
 
             <!-- Image section 2 -->
             <div class="flex justify-center mt-16">
-                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes"
+                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
             </div>
             <!-- Text section 2 -->
             <div class="mt-10">
@@ -147,7 +159,8 @@
 
             <!-- Image section 3 -->
             <div class="flex justify-center mt-16">
-                <img src="./Images/visual-editor.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+                <img src="./Images/visual-editor.png" alt="Ecommerce Themes"
+                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
             </div>
             <!-- Text section 3 -->
             <div class="mt-10">
@@ -164,7 +177,8 @@
 
             <!-- Image section 4 -->
             <div class="flex justify-center mt-16">
-                <img src="./Images/products.png" alt="Ecommerce Themes" class="w-full md:w-2/3 lg:w-1/2">
+                <img src="./Images/products.png" alt="Ecommerce Themes"
+                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
             </div>
             <!-- Text section 4 -->
             <div class="mt-10">
@@ -184,12 +198,13 @@
     <section
         class="bg-[#F9EDD7] w-full py-16 md:py-[140px] px-4 sm:px-10 md:px-[60px] md:w-full page-3 box-border text-center">
         <div class="container mx-auto">
-            <p class="text-[#D9534F] text-lg md:text-[28px] font-medium cursive-p">Manage</p>
-            <p class="md:mt-4 text-black text-lg md:text-2xl lg:text-3xl font-medium">From shopping carts to content
+            <p class="third-p text-[#D9534F] text-lg md:text-[28px] font-medium cursive-p">Manage</p>
+            <p class="third-p md:mt-4 text-black text-lg md:text-2xl lg:text-3xl font-medium">From shopping carts to
+                content
                 customers,</p>
-            <p class="md:mt-2 text-black text-2xl md:text-4xl lg:text-5xl font-semibold">your entire order cycle, <br
-                    class="md:hidden"> automated</p>
-            <div class="flex justify-center mt-10">
+            <p class="third-p md:mt-2 text-black text-2xl md:text-4xl lg:text-5xl font-semibold">your entire order
+                cycle, <br class="md:hidden"> automated</p>
+            <div class="third-div flex justify-center mt-10">
                 <img src="./Images/shopping-cycle.png" alt="Order Cycle"
                     class="w-full md:w-2/3 lg:w-full hidden md:block">
                 <img src="./Images/happy-customer-heart.png" alt="Order" class="w-full md:w-2/3 lg:w-full md:hidden ">
@@ -197,10 +212,10 @@
         </div>
     </section>
     <!-- Fourth Page -->
-    <section class="py-16 md:py-[140px] page-4">
+    <section class="py-16 md:py-[140px]">
         <div class="mx-4 sm:mx-10 md:mx-10 lg:mx-[60px]">
             <!-- Market tools -->
-            <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="fourth-div flex flex-col md:flex-row justify-between items-center">
                 <div class="text-center md:text-left">
                     <p class="cursive-p text-[#E32426] text-[28px]">Market</p>
                     <p class="text-[32px] md:text-[42px] lg:text-[52px] text-black font-bold">Tools to find your</p>
@@ -210,7 +225,7 @@
                 </div>
 
                 <a href="#"
-                    class="text-black max-md:w-[40%] mt-6 md:mt-0 rounded-[30px] border-[1px] border-[#cdddd5] py-4 px-7 lg:mx-10">Start
+                    class="hover:translate-y-[-10px] hover:border-black duration-500 text-black max-md:w-[40%] mt-6 md:mt-0 rounded-[30px] border-[1px] border-[#cdddd5] py-4 px-7 lg:mx-10">Start
                     selling in style</a>
 
             </div>
@@ -218,7 +233,7 @@
             <div class="flex flex-wrap gap-7 rounded-[30px] mt-10">
                 <!-- First Advertisement card -->
                 <div
-                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row bg-[#F9EDD7] basis-full md:basis-[40%] rounded-[30px] gap-6 p-6">
+                    class="fourth-sub-div1 flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row bg-[#F9EDD7] basis-full md:basis-[40%] rounded-[30px] gap-6 p-6">
                     <div>
                         <p class="text-[#E32426] font-semibold">SEO</p>
                         <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Be the first store in
@@ -232,7 +247,7 @@
                 </div>
                 <!-- Second Advertisement card -->
                 <div
-                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[53%] rounded-[30px] gap-6 p-6">
+                    class="fourth-sub-div2 flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[53%] rounded-[30px] gap-6 p-6">
                     <div>
                         <p class="text-[#E32426] font-semibold">SOCIAL SELLING</p>
                         <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Make them buy where they
@@ -246,7 +261,7 @@
                 </div>
                 <!-- Third Advertisement card -->
                 <div
-                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#008452] basis-full md:basis-[50%] rounded-[30px] gap-6 p-6">
+                    class="fourth-sub-div3 flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#008452] basis-full md:basis-[50%] rounded-[30px] gap-6 p-6">
                     <div>
                         <p class="text-[#01EE65] font-semibold">CAMPAIGNS</p>
                         <p class="text-white text-[24px] md:text-[30px] font-bold my-[20px]">Get shoppers to the finish
@@ -260,12 +275,12 @@
                 </div>
                 <!-- Fourth Advertisement card -->
                 <div
-                    class="md:flex hidden flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row basis-full md:basis-[30%] rounded-[30px] p-6 md:p-0 background-image">
+                    class="fourth-sub-div4 md:flex hidden flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px]  md:flex-row basis-full md:basis-[30%] rounded-[30px] p-6 md:p-0 background-image">
                     <!-- Placeholder for background image or other content -->
                 </div>
                 <!-- Fifth Advertisement card -->
                 <div
-                    class="flex flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] flex-col md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[30%] rounded-[30px] gap-6 p-6 m-d:p-0">
+                    class="fourth-sub-div5 flex flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] flex-col md:flex-row border-[1px] border-[#cdddd5] basis-full md:basis-[30%] rounded-[30px] gap-6 p-6 m-d:p-0">
                     <div>
                         <p class="text-[#E32426] font-semibold">CONTENT MANAGEMENT</p>
                         <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Nurture them with content
@@ -279,7 +294,7 @@
                 </div>
                 <!-- Sixth Advertisement card -->
                 <div
-                    class="flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#F9EDD7] basis-full md:basis-[25%] rounded-[30px] gap-6 p-6">
+                    class="fourth-sub-div6 flex flex-col flex-grow md:pt-[40px] md:pb-[50px] md:pl-[50px] md:pr-[55px] md:flex-row bg-[#F9EDD7] basis-full md:basis-[25%] rounded-[30px] gap-6 p-6">
                     <div>
                         <p class="text-[#E32426] font-semibold">ZOHO'S AI BOT</p>
                         <p class="text-black text-[24px] md:text-[30px] font-bold my-[20px]">Let your products find
@@ -295,37 +310,41 @@
         </div>
     </section>
     <!-- Fifth Page -->
-    <section class="bg-[#D0EADC] pt-16 md:pt-[120px] pb-20 md:pb-[160px] page-5">
+    <section class="bg-[#D0EADC] pt-16 md:pt-[120px] pb-20 md:pb-[160px]">
         <div class="mx-4 sm:mx-10 md:mx-[60px]">
             <!-- Build section-Integrations-with-logistics -->
             <div class="flex justify-between items-center">
                 <div class="flex justify-center items-center flex-col text-center">
-                    <p class="cursive-p text-[#E32426] text-[28px]">Integrations</p>
-                    <p class="text-[16px] md:text-[26px] text-black font-semibold">What if you can build, manage and
+                    <p class="fifth-p1 cursive-p text-[#E32426] text-[28px]">Integrations</p>
+                    <p class="fifth-p2 text-[16px] md:text-[26px] text-black font-semibold">What if you can build,
+                        manage and
                         market</p>
-                    <p class="text-[28px] md:text-[52px] mb-4 md:mb-[20px] text-black font-bold w-full md:w-[60%]">your
+                    <p
+                        class="fifth-p3 text-[28px] md:text-[52px] mb-4 md:mb-[20px] text-black font-bold w-full md:w-[60%]">
+                        your
                         entire ecommerce
                         business on one app</p>
                 </div>
             </div>
             <!-- Placeholder for additional content -->
-            <div class="h-[50vh] md:h-[80vh] flex items-center justify-center">
+            <div class="fifth-div h-[50vh] md:h-[80vh] flex items-center justify-center">
                 <!-- Placeholder for future content -->
                 <p class="text-center text-gray-600">Content coming soon...</p>
             </div>
         </div>
     </section>
     <!-- Sixth Page -->
-    <section class="bg-[#01403D] pt-16 md:pt-[120px] pb-20 md:pb-[160px] ">
+    <section class="bg-[#01403D] pt-16 md:pt-[120px] pb-20 md:pb-[160px]">
         <div class="mx-4 sm:mx-10 lg:mx-[60px]">
             <div class="md:flex justify-between items-end">
                 <div class="w-full lg:w-[48%] mb-10 md:mb-0">
-                    <p class="cursive-p text-[#01EE65] text-[28px] text-center md:text-left">Customer Support</p>
+                    <p class="sixth-p1 cursive-p text-[#01EE65] text-[28px] text-center md:text-left">Customer Support
+                    </p>
                     <p
-                        class="text-[32px] md:text-[42px] lg:text-[52px] text-white font-semibold mb-5 text-center md:text-left">
+                        class="sixth-p2 text-[32px] md:text-[42px] lg:text-[52px] text-white font-semibold mb-5 text-center md:text-left">
                         No
                         problem too big, no question too small.</p>
-                    <p class="text-[18px] text-white  text-center md:text-left">We're committed to the
+                    <p class="sixth-p3 text-[18px] text-white  text-center md:text-left">We're committed to the
                         growth of your ecommerce business, just as
                         you are. Reach out to us when in need.
                     </p>
@@ -337,10 +356,10 @@
                 </div>
             </div>
             <!-- Three large buttons -->
-            <div class="flex flex-col lg:flex-row justify-between py-8 gap-4">
+            <div class="sixth-div flex flex-col lg:flex-row justify-between py-8 gap-4">
                 <!-- 1st large button -->
                 <a href="#"
-                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    class="hover:translate-y-[-10px] hover:border-white duration-500 w-full lg:w-[30%] border-[1px] border-[#cdddd55e] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
                     <span>Send us an email</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 h-6">
@@ -350,7 +369,7 @@
                 </a>
                 <!-- 2nd large button -->
                 <a href="#"
-                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    class="hover:translate-y-[-10px] hover:border-white duration-500 w-full lg:w-[30%] border-[1px] border-[#cdddd55e] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
                     <span>Request a call back</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 h-6">
@@ -360,7 +379,7 @@
                 </a>
                 <!-- 3rd large button -->
                 <a href="#"
-                    class="w-full lg:w-[30%] border-[1px] border-[#cdddd5] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
+                    class="hover:translate-y-[-10px] hover:border-white duration-500 w-full lg:w-[30%] border-[1px] border-[#cdddd55e] rounded-[30px] py-4 px-5 font-semibold text-white flex items-center justify-between">
                     <span>Schedule a free demo</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 h-6">
@@ -376,14 +395,14 @@
         <div class="mx-4 sm:mx-10 lg:mx-[60px]">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10">
                 <div class="text-center md:text-left">
-                    <p class="cursive-p text-[#E32426] text-[28px]">Market</p>
-                    <p class="text-[32px] md:text-[52px] text-black font-bold">From getting started to</p>
-                    <p class="text-[32px] md:text-[52px] text-black font-bold">
+                    <p class="seventh-p1 cursive-p text-[#E32426] text-[28px]">Market</p>
+                    <p class="seventh-p2 text-[32px] md:text-[52px] text-black font-bold">From getting started to</p>
+                    <p class="seventh-p3 text-[32px] md:text-[52px] text-black font-bold">
                         what's next,<span class="text-[#00973F]">we've got it all.</span>
                     </p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+            <div class="seventh-div grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
                 <!-- Help Center Card -->
                 <div class="bg-white rounded-lg border-[1px] py-10 px-6 flex flex-col items-center hover:bg-[#F9EDD7]">
                     <img src="./Images/help-centre.jpg" alt="Help Center Icon" class="h-24 mb-4">
@@ -424,23 +443,26 @@
         </div>
     </section>
     <!-- Eigth Page -->
-    <section class="py-16 min-h-screen">
+    <section class="pb-16">
         <div
-            class="flex items-center justify-center text-center rounded-[30px] shadow-lg bg-[#01403D] relative mx-4 sm:mx-10 md:mx-[60px] h-[550px]">
+            class="eigth-div flex items-center justify-center text-center rounded-[30px] shadow-lg bg-[#01403D] relative mx-4 sm:mx-10 md:mx-[60px] h-[550px]">
             <!-- Left Image -->
-            <div class="hidden md:block absolute top-0 left-0 w-[80px] md:w-[133px] h-[200px] md:h-[350px]">
+            <div class="eigth-div hidden md:block absolute top-0 left-0 w-[80px] md:w-[133px] h-[200px] md:h-[350px]">
                 <img src="./Images/left-img-basket.png" alt="Left Image">
             </div>
             <!-- Center Content -->
             <div class="mb-10 w-full max-w-lg md:max-w-2xl flex items-center flex-col z-10">
-                <h1 class="text-white text-[32px] md:text-[47px] font-bold mb-10 md:mb-6">What better day to start doing
+                <h1 class="eigth-h1 text-white text-[32px] md:text-[47px] font-bold mb-10 md:mb-6">What better day to
+                    start doing
                     business with the internet?</h1>
-                <a href="#"
-                    class="block w-full max-w-xs md:max-w-md border-[1px] border-black bg-green-500 hover:bg-green-400 text-white font-bold p-5 md:p-10 rounded-full transition duration-300 ease-in-out">Start
-                    today with Zoho Commerce</a>
+                <span class="eigth-a">
+                    <a href="#"
+                        class="store-btn hover:border-black duration-500 block w-full max-w-xs md:max-w-md border-[1px] border-black bg-[#01EE65]  font-bold p-5 md:p-10 rounded-full">Start
+                        today with Zoho Commerce</a>
+                </span>
             </div>
             <!-- Right Image -->
-            <div class="hidden md:block absolute bottom-0 right-0 w-[80px] md:w-[133px] ">
+            <div class="eigth-div hidden md:block absolute bottom-0 right-0 w-[80px] md:w-[133px] ">
                 <img src="./Images/right-img-basket.png" alt="Right Image">
             </div>
         </div>
@@ -449,14 +471,17 @@
     <section class="bg-black py-[60px]">
         <!-- Images at the footer -->
         <div class="flex flex-col justify-center items-center pb-10">
-            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
                 <img src="./Images/zoho-commerce-demo-footer.jpg" alt="Demo Image" class="w-full h-auto object-cover">
             </a>
-            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
                 <img src="./Images/zoho-commerce-youtube-footer.jpg" alt="YouTube Image"
                     class="w-full h-auto object-cover">
             </a>
-            <a href="#" class="block mb-3 mx-auto max-w-[350px]">
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
                 <img src="./Images/zoho-survey-banner.jpg" alt="Survey Banner Image" class="w-full h-auto object-cover">
             </a>
         </div>
@@ -604,6 +629,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
