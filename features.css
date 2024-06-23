@@ -51,12 +51,13 @@
     margin-top: 35px;
 }
 .containerImage{
-    margin-left: 95px;
+    margin-left: 117px;
 }
 
 .feature{
     font-size: 30px;
     letter-spacing: 1px;
+    
     /* margin-left: 55px; */
 }
 .main{
@@ -122,6 +123,7 @@ body {
     margin-left: 39px;
     font-size: 35px;
     font-family: sans-serif;
+    margin-left: 60px;
 }
 .Hassle_hustle{
 
