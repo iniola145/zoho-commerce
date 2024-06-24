@@ -50,6 +50,10 @@
     font-weight: 600;
     /* margin-top: 200px; */
 }
+.nav11{
+    animation: zoom 1s ease-in-out;
+    animation-delay: calc(.1s * var(--i));
+}
 .btnDiv{
     margin-top: 35px;
 }
