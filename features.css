@@ -52,6 +52,20 @@
 .nav11{
     animation: zoom 1s ease-in-out;
     animation-delay: calc(.1s * var(--i));
+    position: relative;
+}
+.nav11::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--lightgreen);
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+.nav11:hover::before{
+    width: 100%;
 }
 .btnDiv{
     margin-top: 35px;
