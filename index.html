@@ -16,7 +16,8 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="w-fit">
@@ -121,76 +122,101 @@
                 </a>
             </div>
 
-            <!-- Image section 1 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 1 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show your brand in bold</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Pick from an array of customizable ecommerce store themes for your online store and attract your
-                    kind of customers.
-                </p>
-            </div>
-            <!-- Media query divider 1 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mb-10">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 1 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/templates-1.jpg" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 1 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show
+                                your
+                                brand
+                                in bold</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Pick from an array of customizable ecommerce store themes for your online store and
+                                attract
+                                your
+                                kind of customers.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 2 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/sitebuilder.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 2 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch
+                                with
+                                zero code</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Save time and costs on coding and confidently run your store on zero code. Pick a
+                                domain,
+                                list
+                                your
+                                products, and start selling - it is as easy as it sounds.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 3 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/visual-editor.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 3 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">
+                                Customize,
+                                start to finish</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Show your buyers how easy and secure it is to shop from you, from adding products to
+                                their
+                                carts
+                                till having a clean, customizable checkout process.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 4 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/products.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 4 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate
+                                pretty
+                                displays</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Thoughtfully list, categorize, and add your products to a collection, making sure you
+                                display
+                                your
+                                products within a click's reach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Image section 2 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 2 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch with zero code</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Save time and costs on coding and confidently run your store on zero code. Pick a domain, list your
-                    products, and start selling - it is as easy as it sounds.
-                </p>
-            </div>
-            <!-- Media query divider 2 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-            <!-- Image section 3 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/visual-editor.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 3 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Customize, start to finish</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Show your buyers how easy and secure it is to shop from you, from adding products to their carts
-                    till having a clean, customizable checkout process.
-                </p>
-            </div>
-            <!-- Media query divider 3 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
 
-            <!-- Image section 4 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/products.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 4 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate pretty displays</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Thoughtfully list, categorize, and add your products to a collection, making sure you display your
-                    products within a click's reach.
-                </p>
-            </div>
-            <!-- Media query divider 4 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
             </div>
         </div>
     </section>

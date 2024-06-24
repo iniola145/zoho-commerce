@@ -37,3 +37,54 @@ ScrollReveal().reveal(".seventh-div", {delay: 450});
 ScrollReveal().reveal(".eigth-div");
 ScrollReveal().reveal(".eigth-h1", {delay: 400});
 ScrollReveal().reveal(".eigth-a", {delay: 400});
+
+// SWIPERJS
+const swiper = new Swiper(".swiper", {
+    //   Optional Parameters
+    loop: true,
+    direction: "horizontal",
+
+    //   Pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    //   Navigation
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    // Keyboard Control
+    keyboard: {
+        enabled: true,
+    },
+
+    // Mousewheel Control
+    mousewheel: {
+        enabled: true,
+        thresholdDelta: 60,
+    },
+
+    // Autoplay
+    autoplay: {
+        delay: 3000,
+        // reduce the speed of the autoplay
+    },
+
+    // Speed
+    speed: 700,
+
+    // Effect
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+    },
+});
+
+
