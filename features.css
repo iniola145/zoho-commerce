@@ -2,10 +2,12 @@
     width: 150px;
     margin-left: 45px;
 }
-/* .nav{
-    margin-right: 20px;
-    padding-right: 20px;
-} */
+.nav{
+    /* margin-right: 20px;
+    padding-right: 20px; */
+    background-color: white;
+    
+}
 .Div1{
     font-size: 40px;
     font-family: sans-serif;
@@ -161,6 +163,40 @@ body {
 .signupDiv{
     margin-top: 15px;
 }
+.mediafirst{
+    display: none;
+}
+.MI{
+    display: none;
+}
+.Div1media{
+    display: none;
+}
+.sectionOneMedia{
+    display: none;
+}
+.sectionMedia{
+    display: none;
+}
+.MAINmedia{
+    display: none;
+}
+.footerM{
+    display: none;
+}
+.MediaOption{
+    display: none;
+}
+.DMQ{
+    display: none;
+}
+.containerMedia{
+    display: none;
+}
+.footerMEDIAq{
+    display: none;
+}
+/* .bi{display: none;} */
 @media (max-width: 1200px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
@@ -177,4 +213,164 @@ body {
     .grid-container {
         grid-template-columns: 1fr;
     }
+}
+@media (max-width: 376px){
+    /* body{display: none;} */
+    .nav{display: flex;}
+    .sectionOne{display: none;}
+    .section{display: none;}
+    .MAIN{display: none;}
+    .footer{display: none;}
+    .FOOTER{display: none;}
+    .underList{display: none;}
+    .first{display: none;}
+    .mediafirst{
+        display: block;
+        width: 170px;
+        /* height: 2000px; */
+
+
+    }
+    .MI{
+        display: block;
+        width: 36px;
+        margin-right: 8px;
+        margin-top: 4px;
+
+    }
+    /* .divisionOne{
+        display: block;
+    }
+   */
+   .sectionOneMedia{
+    display: block;
+    /* margin-left: 90px; */
+    padding-top: 120px;
+}
+    
+    .Div1mediaq{
+        font-size: 25px;
+        font-style: bold;
+        font-weight: 900;
+        justify-content: center;
+        text-align: center;
+        width: 360px;
+    }
+    .paragraphOnemedia{
+        width: 340px;
+        margin-left: 16px;
+        text-align: center;
+        margin-top: 16px;
+        
+    }
+    .mediaImg{
+        display: block;
+        width: 330px;
+        height: 45px;
+        margin-left: 22px;
+        text-align: center;
+        margin-top: 29px;
+    }
+    .btnDivmedia{
+        width: 340px;
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 29px;
+    }
+    .sectionMedia{
+        display: block;
+        padding-top:360px;
+    }
+    .featuresMedia{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-style: bold;
+}
+    /* .flexMedia{
+        padding-top: 0;
+    } */
+    /* .flexMedia{
+        margin-top: 0;
+    } */
+    .MAINmedia{
+        display: block;
+        /* background-color: grey; */
+        /* padding: 200px; */
+        /* border: 2px solid grey; */
+        /* padding: 2px; */
+        margin-top: 50px;
+    }
+    .moreHustleMedia{
+        font-size: 30px;
+        width: 320px;
+        color: black;
+        text-align: center;
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding-right: 40px;
+        line-height: 34px;
+    }
+    .buildMedia{
+        width: 320px;
+        text-align: center;
+        font-size: 17px;
+        padding-right: 40px;
+        padding-top: 10px;
+    }
+    /* .mediasinup{
+        padding-right: 20px;
+    } */
+    .mediaNav{
+        display: block;
+        /* border: 2px solid grey; */
+        background-color: #F5F5F5;
+        /* align-items: center;
+        text-align: center; */
+    }
+   .signUPmedia{
+    border: 2px;
+    background-color: red;
+    padding: 10px 30px;
+    /* margin-top: 600px; */
+    margin-left: 43px;
+    /* margin-top: 120px; */
+   } 
+   .footerM{
+    display: block;
+   }
+   .MediaOption{
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+    position: relative;
+   }
+/* .dropdownMedia{
+position: absolute;
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+text-align: right;
+align-items: right;
+justify-content: right;
+} */
+ /* .dropDimgMQ{
+    display: block;
+ } */
+ .DMQ{
+    display: block;
+    /* text-align: center; */
+}
+.containerMedia{
+    display: flex;
+    width: 350px;
+    margin-top: 35px;
+}
+.footerMEDIAq{
+    display: block;
+}
 }
