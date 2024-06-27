@@ -1098,6 +1098,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1983,6 +1987,10 @@ video {
     border-width: 1px;
   }
 
+  .md\:border-t-\[1px\] {
+    border-top-width: 1px;
+  }
+
   .md\:border-solid {
     border-style: solid;
   }
@@ -1990,6 +1998,11 @@ video {
   .md\:border-\[\#E7EBF0\] {
     --tw-border-opacity: 1;
     border-color: rgb(231 235 240 / var(--tw-border-opacity));
+  }
+
+  .md\:border-t-\[\#E7EBF0\] {
+    --tw-border-opacity: 1;
+    border-top-color: rgb(231 235 240 / var(--tw-border-opacity));
   }
 
   .md\:p-0 {
