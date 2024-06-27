@@ -22,8 +22,72 @@
 
 <body class="w-fit">
     <!-- Navigation menu -->
+
+    <nav class="flex items-center justify-between p-4 bg-white shadow-md w-full top-0 left-0 right-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="Logo" class="h-10 mr-2">
+            <span class="text-xl font-semibold">Z O H O</span>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-gray-700 hover:text-gray-900">Books</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Social</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">SalesIQ</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">PageSense</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Inventory</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Billing</a>
+            <div class="relative group">
+                <button class="flex items-center text-gray-700 hover:text-gray-900 focus:outline-none">
+                    All Products <i class="bx bx-chevron-down ml-1"></i>
+                </button>
+                <!-- Dropdown content -->
+                <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 3</a>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Right Side Icons/Links -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="bx bx-search"></i></a>
+            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="bx bx-globe"></i> English</a>
+            <a href="#" class="text-red-500 hover:text-red-700">SIGN IN</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+            <i class="bx bx-menu text-3xl"></i>
+        </button>
+      
+        <div class="hidden fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden">
+          <div class="absolute right-0 top-0 w-64 bg-white h-full shadow-lg p-4">
+              <div class="flex items-center justify-between mb-4">
+                  <img src="https://via.placeholder.com/50" alt="Logo" class="h-10">
+                  <button class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                      <i class="bx bx-x text-3xl"></i>
+                  </button>
+              </div>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">Books</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">Social</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">SalesIQ</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">PageSense</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">Inventory</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">Billing</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">All Products</a>
+              <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">SIGN IN</a>
+          </div>
+      </div>
+      <div class="study">
+      
+        </div>
+    </nav>
+
     <nav
-        class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
+        class="flex py-5 px-6 items-center top-[70px] left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
         <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
         <a href="#" class="nav inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
         <!-- Menu options -->
@@ -186,7 +250,36 @@
                 </div>
             </li>
         </ul>
+        <div id="sticky-tab" class="hidden-tab fixed bottom-0 left-0 right-0 bg-blue-500 text-white p-4 text-center">
+            This is a sticky tab
+        </div>
+    
+        <script>
+            const menuButton = document.querySelector('nav button');
+            const mobileMenu = document.querySelector('.fixed.inset-0');
+            const closeButton = document.querySelector('.bx-x');
+            const stickyTab = document.getElementById('sticky-tab');
+    
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+    
+            closeButton.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+    
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    stickyTab.classList.remove('hidden-tab');
+                    stickyTab.classList.add('visible-tab');
+                } else {
+                    stickyTab.classList.remove('visible-tab');
+                    stickyTab.classList.add('hidden-tab');
+                }
+            });
+        </script>
     </nav>
+
     <!-- First page -->
     <section class="py-[90px] md:py-[140px] px-4 sm:px-10 md:px-10 lg:px-20 w-full md:w-fit page-1">
         <div class="py-8">
