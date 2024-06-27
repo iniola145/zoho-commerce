@@ -915,6 +915,10 @@ video {
   width: 100%;
 }
 
+.\!w-\[450px\] {
+  width: 450px !important;
+}
+
 .max-w-\[350px\] {
   max-width: 350px;
 }
@@ -1194,6 +1198,10 @@ video {
 
 .p-\[50px\] {
   padding: 50px;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-10 {
