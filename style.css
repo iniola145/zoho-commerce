@@ -84,25 +84,28 @@
         transform: translateY(-10px);
     }
 } */
+
+/* Navbar dropdown */
 .bxs-down-arrow{
     font-size: 10px;
-}
-.reveal{
-  opacity: 0;
-  display: none;
 }
 .div-reveal .reveal{
   transition: all .5s;
   transform: translateY(30px);
+  opacity: 0;
   display: flex;
-  z-index: -10;
+  visibility: hidden;
 }
 .div-reveal:hover .reveal{
   opacity: 1;
   transform: translateY(0px);
-  z-index: 10;
+  visibility: visible;
 }
 
+.nav{
+  animation: zoom 1s ease-in-out;
+  animation-delay: calc(.1s * var(--i));
+}
 
 
 /* SWIPER STYLESHEET */
