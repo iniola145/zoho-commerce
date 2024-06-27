@@ -84,22 +84,25 @@
         transform: translateY(-10px);
     }
 } */
-.move{
-    position: relative;
+.bxs-down-arrow{
+    font-size: 10px;
 }
-.move::before{
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: var(--lightgreen);
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    transition: 0.5s all ease-in-out;
+.reveal{
+  opacity: 0;
+  display: none;
 }
-.move:hover::before{
-    width: 100%;
+.div-reveal .reveal{
+  transition: all .5s;
+  transform: translateY(30px);
+  display: flex;
+  z-index: -10;
 }
+.div-reveal:hover .reveal{
+  opacity: 1;
+  transform: translateY(0px);
+  z-index: 10;
+}
+
 
 
 /* SWIPER STYLESHEET */
