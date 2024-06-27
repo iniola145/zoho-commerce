@@ -1,3 +1,20 @@
+/* Navbar dropdown */
+.bxs-down-arrow{
+    font-size: 10px;
+  }
+  .div-reveal .reveal{
+  transition: all .5s;
+  transform: translateY(30px);
+  opacity: 0;
+  display: flex;
+  visibility: hidden;
+  }
+  .div-reveal:hover .reveal{
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  }
+  
 .first{
     width: 150px;
     margin-left: 45px;

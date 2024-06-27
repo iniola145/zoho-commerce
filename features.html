@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="./features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -16,7 +17,180 @@
 
 
 <body>
-    <nav class="nav flex justify-between py-5 px-4 items-center fixed left-0 right-0 bg-transparent">
+
+    <!-- Navigation menu -->
+    <nav
+        class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
+        <a href="#"><img src="./Images Features/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
+        <a href="#" class="nav inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
+        <!-- Menu options -->
+        <ul class="hidden md:flex space-x-4 lg:space-x-11">
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Features</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-4 absolute top-[100%] left-0 !w-[450px] rounded-lg reveal">
+                    <div class="flex flex-wrap gap-8">
+                        <ul>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Infrastructure</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Pre-built Themes</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Site
+                                Builder</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Visual
+                                Editor</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Multi-currency View
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Pages
+                                and Files</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Blog
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                                Filters</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Message
+                                and Cookie Bar
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                                Management
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Categories and
+                                Collections</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Order
+                                Management</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Customer
+                                Management
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">User
+                                Management</li>
+                        </ul>
+                    </div>
+                    <a href="features.html"
+                        class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">See
+                        All
+                        Features</a>
+                </div>
+            </li>
+            <li class="nav flex items-center text-[13px] lg:text-[15px]"><a href="">Pricing</a></li>
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Themes</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Health &
+                            Beauty</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Fashion &
+                            Clothing</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Food & Drink
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Home &
+                            Garden</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Furniture &
+                            Manufacturing</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Gifts, Toys
+                            & Games</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Electronics
+                        </li>
+                    </ul>
+                    <a href="themes.html"
+                        class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Themes</a>
+                </div>
+            </li>
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Integrations</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Shipping
+                            Carriers</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Payment
+                            Gateways</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Marketing
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Analytics
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Accounting &
+                            Taxes</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">CRM & Stock
+                            Management
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Productivity
+                        </li>
+                    </ul>
+                    <a href="integration.html"
+                        class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Integrations</a>
+                </div>
+            </li>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Customers</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-3 absolute top-[100%] left-0 !w-[190px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Customer
+                            Stories</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Refer a
+                            Friend</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Resources</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Guides</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Insights &
+                            Blogs</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                            Onboarding</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">What's New
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Find a
+                            Specialist</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">On-demand
+                            Webinars</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">FAQ</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Knowledge
+                            Base</li>
+                    </ul>
+                    <a href=""
+                        class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Resources</a>
+                </div>
+            </li>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Support</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] right-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Book a Demo
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Register for
+                            Live
+                            Webinars</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">API Guide
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Developer
+                            Resources</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Prosper's menu bar -->
+    <!-- <nav class="nav flex justify-between py-5 px-4 items-center fixed left-0 right-0 bg-transparent">
         <a class="first" href="#"><img src="./Images Features/commerce.jpg" alt="zoho" ></a>
        
         <ul class="underList">
@@ -31,13 +205,15 @@
 
         <a class="mediafirst" href="#"><img src="./Images Features/commerce.jpg" alt="zoho" ></a>
         <a class="MI" href="#"><img src="./Screenshot 2024-06-23 165719.png" alt="zoho" ></a>
-    </nav>    
+    </nav>     -->
 
     <section class="w-[100%] flex pt-[130px] sectionOne">
         <div class="divisionOne w-1/2 ">
             <h1 class="Div1 font-serif font-bold">All the features your business needs on one ecommerce platform</h1>
             <div class="paragraphOne">
-                <p class="pOne font-sans">Zoho Commerce is an excellent solution for businesses looking for a feature-packed and intuitive ecommerce platform that can handle all their business needs and scale with them as they grow.</p>
+                <p class="pOne font-sans">Zoho Commerce is an excellent solution for businesses looking for a
+                    feature-packed and intuitive ecommerce platform that can handle all their business needs and scale
+                    with them as they grow.</p>
             </div>
             <div class="btnDiv">
                 <a class="BTN" href="#">ACCESS ZOHO COMMERCE</a>
@@ -48,13 +224,16 @@
             <img class="image" src="./Images Features/customer-journey-illustration.webp" alt="">
         </div>
 
-        
+
     </section>
     <section class="w-[100%] flex  sectionOneMedia">
         <div class="divisionOnemedia  w-1/2 ">
-            <h1 class="Div1mediaq font-serif font-bold">All the features your business needs on one ecommerce platform</h1>
+            <h1 class="Div1mediaq font-serif font-bold">All the features your business needs on one ecommerce platform
+            </h1>
             <div class="paragraphOnemedia">
-                <p class="pOne font-sans">Zoho Commerce is an excellent solution for businesses looking for a feature-packed and intuitive ecommerce platform that can handle all their business needs and scale with them as they grow.</p>
+                <p class="pOne font-sans">Zoho Commerce is an excellent solution for businesses looking for a
+                    feature-packed and intuitive ecommerce platform that can handle all their business needs and scale
+                    with them as they grow.</p>
             </div>
             <div class="btnDivmedia">
                 <a class="BTN" href="#">ACCESS ZOHO COMMERCE</a>
@@ -65,170 +244,170 @@
             <img class="imagemedia" src="./Images Features/customer-journey-illustration.webp" alt="">
         </div>
 
-        
+
     </section>
 
-<section class="section">
-    <h1 class="font-bold features">FEATURES</h1>
-    <div class="grid-container">
-        <div class="flex flex-wrap GC">
-         <div class="grid-item">    
-            <img class="containerImage" src="./Images Features/image.png" alt="image">
-             <h2>Infrastructure</h2>
-             <p>Launch your website with ready infrastructure - SSL, sub-domain, and hosting.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./buildThemes.png" alt="image">
-             <h2>Pre-built Themes</h2>
-             <p>Bring your website to life quicker with responsive themes.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./settings.png" alt="image">
-             <h2>Site Builder</h2>
-             <p>Take control of your brand with our drag-and-drop site builder.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./ttt.png" alt="image">
-             <h2>Visual Editor</h2>
-             <p>Style your themes with site-wide customizations from one place.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./cash.png" alt="image">
-             <h2>Currencies</h2>
-             <p>Let overseas customers browse in their preferred currency.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./page and file.png" alt="image">
-             <h2>Pages and Files</h2>
-             <p>Highlight your landing pages with compelling images, documents, and other useful files.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./blog.png" alt="image">
-             <h2>Blog</h2>
-             <p>Engage your customers by publishing content they appreciate.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./product.png" alt="image">
-             <h2>Product Filters</h2>
-             <p>Make browsing through your store easy with product filters.</p>
-             <a href="#">Learn more</a>
-         </div>
+    <section class="section">
+        <h1 class="font-bold features">FEATURES</h1>
+        <div class="grid-container">
+            <div class="flex flex-wrap GC">
+                <div class="grid-item">
+                    <img class="containerImage" src="./Images Features/image.png" alt="image">
+                    <h2>Infrastructure</h2>
+                    <p>Launch your website with ready infrastructure - SSL, sub-domain, and hosting.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./buildThemes.png" alt="image">
+                    <h2>Pre-built Themes</h2>
+                    <p>Bring your website to life quicker with responsive themes.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./settings.png" alt="image">
+                    <h2>Site Builder</h2>
+                    <p>Take control of your brand with our drag-and-drop site builder.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./ttt.png" alt="image">
+                    <h2>Visual Editor</h2>
+                    <p>Style your themes with site-wide customizations from one place.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./cash.png" alt="image">
+                    <h2>Currencies</h2>
+                    <p>Let overseas customers browse in their preferred currency.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./page and file.png" alt="image">
+                    <h2>Pages and Files</h2>
+                    <p>Highlight your landing pages with compelling images, documents, and other useful files.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./blog.png" alt="image">
+                    <h2>Blog</h2>
+                    <p>Engage your customers by publishing content they appreciate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./product.png" alt="image">
+                    <h2>Product Filters</h2>
+                    <p>Make browsing through your store easy with product filters.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="containerImage" src="./message.png" alt="image">
+                    <h2>Message and Cookie Bar</h2>
+                    <p>Inform customers about offers and store policies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./manageP.png" alt="image">
+                    <h2>Manage Products</h2>
+                    <p>
+                        Create and manage products and their variants with ease.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./ccc.png" alt="image">
+                    <h2>Categories and Collections</h2>
+                    <p>
+                        Organize products by categories and collections to aid product discovery.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./manageP.png" alt="image">
+                    <h2>Manage Orders</h2>
+                    <p>
+                        Control the order lifecycle and manage on-time fulfillment.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./customerrr.png" alt="image">
+                    <h2>Manage Customerss</h2>
+                    <p>
+                        Let customers manage their accounts through a dedicated member portal.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./managerUser.png" alt="image">
+                    <h2>Manage Users</h2>
+                    <p>
+                        Assign module-specific access to employees and contributors.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./managerInventory.png" alt="image">
+                    <h2>Manage Inventory</h2>
+                    <p>
+                        Track inventory and stock to fulfill orders on time.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./SEOO.png" alt="image">
+                    <h2>SEO</h2>
+                    <p>
+                        Let search engines and customers discover you better.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="containerImage" src="./SOCIALMEDIA.png" alt="image">
+                    <h2>Sell on Social Media</h2>
+                    <p>
+                        Connect your store to Facebook, Instagram, and Google Shopping.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./orderList.png" alt="image">
+                    <h2>Product Recommendations</h2>
+                    <p>
+                        Boost sales by automatically recommending products
+                        to customers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./EMAIL.png" alt="image">
+                    <h2>Automated Emails</h2>
+                    <p>
+                        Automate emails for abandoned cart, portal signup, and more.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./COUPONS.png" alt="image">
+                    <h2>Coupons</h2>
+                    <p>
+                        Implement advanced coupons on your ecommerce store.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./BuyButtons.png" alt="image">
+                    <h2>Buy Button</h2>
+                    <p>
+                        Embed your products on other platforms to increase sales.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./producTREVIEW.png" alt="image">
+                    <h2>Product Reviews</h2>
+                    <p>
+                        Invite customers to review your products to boost credibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
         </div>
- 
- 
-         <div class="grid-container">
-             <div class="grid-item">
-                <img class="containerImage" src="./message.png" alt="image">
-                 <h2>Message and Cookie Bar</h2>
-                 <p>Inform customers about offers and store policies.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./manageP.png" alt="image">
-                 <h2>Manage Products</h2>
-                 <p>
-                    Create and manage products and their variants with ease.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./ccc.png" alt="image">
-                 <h2>Categories and Collections</h2>
-                 <p>
-                    Organize products by categories and collections to aid product discovery.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./manageP.png" alt="image">
-                 <h2>Manage Orders</h2>
-                 <p>
-                    Control the order lifecycle and manage on-time fulfillment.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./customerrr.png" alt="image">
-                 <h2>Manage Customerss</h2>
-                 <p>
-                    Let customers manage their accounts through a dedicated member portal.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./managerUser.png" alt="image">
-                 <h2>Manage Users</h2>
-                 <p>
-                    Assign module-specific access to employees and contributors.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./managerInventory.png" alt="image">
-                 <h2>Manage Inventory</h2>
-                 <p>
-                    Track inventory and stock to fulfill orders on time.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./SEOO.png" alt="image">
-                 <h2>SEO</h2>
-                 <p>
-                    Let search engines and customers discover you better.</p>
-                 <a href="#">Learn more</a>
-             </div>
-         </div>
-         
-         <div class="grid-container">
-             <div class="grid-item">
-                <img class="containerImage" src="./SOCIALMEDIA.png" alt="image">
-                 <h2>Sell on Social Media</h2>
-                 <p>
-                    Connect your store to Facebook, Instagram, and Google Shopping.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./orderList.png" alt="image">
-                 <h2>Product Recommendations</h2>
-                 <p>
-                    Boost sales by automatically recommending products
-                    to customers.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./EMAIL.png" alt="image">
-                 <h2>Automated Emails</h2>
-                 <p>
-                    Automate emails for abandoned cart, portal signup, and more.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./COUPONS.png" alt="image">
-                 <h2>Coupons</h2>
-                 <p>
-                    Implement advanced coupons on your ecommerce store.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./BuyButtons.png" alt="image">
-                 <h2>Buy Button</h2>
-                 <p>
-                    Embed your products on other platforms to increase sales.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./producTREVIEW.png" alt="image">
-                 <h2>Product Reviews</h2>
-                 <p>
-                    Invite customers to review your products to boost credibility.</p>
-                 <a href="#">Learn more</a>
-             </div>
-            
-         </div>
-     </div>
-   </section>
+    </section>
 
 
 
@@ -252,167 +431,167 @@
 
 
 
-   <section class="sectionMedia">
-    <h1 class="font-bold featuresMedia">FEATURES</h1>
-    <div class="grid-container">
-        <div class="flex flex-wrap GC">
-         <div class="grid-item">    
-            <img class="containerImage" src="./Images Features/image.png" alt="image">
-             <h2>Infrastructure</h2>
-             <p>Launch your website with ready infrastructure - SSL, sub-domain, and hosting.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./buildThemes.png" alt="image">
-             <h2>Pre-built Themes</h2>
-             <p>Bring your website to life quicker with responsive themes.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./settings.png" alt="image">
-             <h2>Site Builder</h2>
-             <p>Take control of your brand with our drag-and-drop site builder.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./ttt.png" alt="image">
-             <h2>Visual Editor</h2>
-             <p>Style your themes with site-wide customizations from one place.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./cash.png" alt="image">
-             <h2>Currencies</h2>
-             <p>Let overseas customers browse in their preferred currency.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./page and file.png" alt="image">
-             <h2>Pages and Files</h2>
-             <p>Highlight your landing pages with compelling images, documents, and other useful files.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./blog.png" alt="image">
-             <h2>Blog</h2>
-             <p>Engage your customers by publishing content they appreciate.</p>
-             <a href="#">Learn more</a>
-         </div>
-         <div class="grid-item">
-            <img class="containerImage" src="./product.png" alt="image">
-             <h2>Product Filters</h2>
-             <p>Make browsing through your store easy with product filters.</p>
-             <a href="#">Learn more</a>
-         </div>
+    <section class="sectionMedia">
+        <h1 class="font-bold featuresMedia">FEATURES</h1>
+        <div class="grid-container">
+            <div class="flex flex-wrap GC">
+                <div class="grid-item">
+                    <img class="containerImage" src="./Images Features/image.png" alt="image">
+                    <h2>Infrastructure</h2>
+                    <p>Launch your website with ready infrastructure - SSL, sub-domain, and hosting.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./buildThemes.png" alt="image">
+                    <h2>Pre-built Themes</h2>
+                    <p>Bring your website to life quicker with responsive themes.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./settings.png" alt="image">
+                    <h2>Site Builder</h2>
+                    <p>Take control of your brand with our drag-and-drop site builder.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./ttt.png" alt="image">
+                    <h2>Visual Editor</h2>
+                    <p>Style your themes with site-wide customizations from one place.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./cash.png" alt="image">
+                    <h2>Currencies</h2>
+                    <p>Let overseas customers browse in their preferred currency.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./page and file.png" alt="image">
+                    <h2>Pages and Files</h2>
+                    <p>Highlight your landing pages with compelling images, documents, and other useful files.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./blog.png" alt="image">
+                    <h2>Blog</h2>
+                    <p>Engage your customers by publishing content they appreciate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./product.png" alt="image">
+                    <h2>Product Filters</h2>
+                    <p>Make browsing through your store easy with product filters.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="containerImage" src="./message.png" alt="image">
+                    <h2>Message and Cookie Bar</h2>
+                    <p>Inform customers about offers and store policies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./manageP.png" alt="image">
+                    <h2>Manage Products</h2>
+                    <p>
+                        Create and manage products and their variants with ease.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./ccc.png" alt="image">
+                    <h2>Categories and Collections</h2>
+                    <p>
+                        Organize products by categories and collections to aid product discovery.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./manageP.png" alt="image">
+                    <h2>Manage Orders</h2>
+                    <p>
+                        Control the order lifecycle and manage on-time fulfillment.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./customerrr.png" alt="image">
+                    <h2>Manage Customerss</h2>
+                    <p>
+                        Let customers manage their accounts through a dedicated member portal.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./managerUser.png" alt="image">
+                    <h2>Manage Users</h2>
+                    <p>
+                        Assign module-specific access to employees and contributors.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./managerInventory.png" alt="image">
+                    <h2>Manage Inventory</h2>
+                    <p>
+                        Track inventory and stock to fulfill orders on time.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./SEOO.png" alt="image">
+                    <h2>SEO</h2>
+                    <p>
+                        Let search engines and customers discover you better.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="containerImage" src="./SOCIALMEDIA.png" alt="image">
+                    <h2>Sell on Social Media</h2>
+                    <p>
+                        Connect your store to Facebook, Instagram, and Google Shopping.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./orderList.png" alt="image">
+                    <h2>Product Recommendations</h2>
+                    <p>
+                        Boost sales by automatically recommending products
+                        to customers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./EMAIL.png" alt="image">
+                    <h2>Automated Emails</h2>
+                    <p>
+                        Automate emails for abandoned cart, portal signup, and more.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./COUPONS.png" alt="image">
+                    <h2>Coupons</h2>
+                    <p>
+                        Implement advanced coupons on your ecommerce store.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./BuyButtons.png" alt="image">
+                    <h2>Buy Button</h2>
+                    <p>
+                        Embed your products on other platforms to increase sales.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="grid-item">
+                    <img class="containerImage" src="./producTREVIEW.png" alt="image">
+                    <h2>Product Reviews</h2>
+                    <p>
+                        Invite customers to review your products to boost credibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
         </div>
- 
- 
-         <div class="grid-container">
-             <div class="grid-item">
-                <img class="containerImage" src="./message.png" alt="image">
-                 <h2>Message and Cookie Bar</h2>
-                 <p>Inform customers about offers and store policies.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./manageP.png" alt="image">
-                 <h2>Manage Products</h2>
-                 <p>
-                    Create and manage products and their variants with ease.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./ccc.png" alt="image">
-                 <h2>Categories and Collections</h2>
-                 <p>
-                    Organize products by categories and collections to aid product discovery.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./manageP.png" alt="image">
-                 <h2>Manage Orders</h2>
-                 <p>
-                    Control the order lifecycle and manage on-time fulfillment.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./customerrr.png" alt="image">
-                 <h2>Manage Customerss</h2>
-                 <p>
-                    Let customers manage their accounts through a dedicated member portal.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./managerUser.png" alt="image">
-                 <h2>Manage Users</h2>
-                 <p>
-                    Assign module-specific access to employees and contributors.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./managerInventory.png" alt="image">
-                 <h2>Manage Inventory</h2>
-                 <p>
-                    Track inventory and stock to fulfill orders on time.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./SEOO.png" alt="image">
-                 <h2>SEO</h2>
-                 <p>
-                    Let search engines and customers discover you better.</p>
-                 <a href="#">Learn more</a>
-             </div>
-         </div>
-         
-         <div class="grid-container">
-             <div class="grid-item">
-                <img class="containerImage" src="./SOCIALMEDIA.png" alt="image">
-                 <h2>Sell on Social Media</h2>
-                 <p>
-                    Connect your store to Facebook, Instagram, and Google Shopping.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./orderList.png" alt="image">
-                 <h2>Product Recommendations</h2>
-                 <p>
-                    Boost sales by automatically recommending products
-                    to customers.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./EMAIL.png" alt="image">
-                 <h2>Automated Emails</h2>
-                 <p>
-                    Automate emails for abandoned cart, portal signup, and more.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./COUPONS.png" alt="image">
-                 <h2>Coupons</h2>
-                 <p>
-                    Implement advanced coupons on your ecommerce store.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./BuyButtons.png" alt="image">
-                 <h2>Buy Button</h2>
-                 <p>
-                    Embed your products on other platforms to increase sales.</p>
-                 <a href="#">Learn more</a>
-             </div>
-             <div class="grid-item">
-                <img class="containerImage" src="./producTREVIEW.png" alt="image">
-                 <h2>Product Reviews</h2>
-                 <p>
-                    Invite customers to review your products to boost credibility.</p>
-                 <a href="#">Learn more</a>
-             </div>
-            
-         </div>
-     </div>
-   </section>
+    </section>
 
 
 
@@ -422,216 +601,211 @@
 
 
 
-   <main class=" MAIN flex justify-center bg-white">
-    <nav class=" bg-gray-50 flex p-[50px] ">
-    <div class="Hassle_hustle">
-        <h1 class="moreHustle">Less hassle, more hustle</h1>
-        <p class="build">Build, run, and grow your entire ecommerce business with Zoho</p>
-    </div>
-    <div class="signupDiv">
-        <a class="signUP" href="http://">SIGN UP TODAY</a>
-    </div>
-    </nav>
- </main>
+    <main class=" MAIN flex justify-center bg-white">
+        <nav class=" bg-gray-50 flex p-[50px] ">
+            <div class="Hassle_hustle">
+                <h1 class="moreHustle">Less hassle, more hustle</h1>
+                <p class="build">Build, run, and grow your entire ecommerce business with Zoho</p>
+            </div>
+            <div class="signupDiv">
+                <a class="signUP" href="http://">SIGN UP TODAY</a>
+            </div>
+        </nav>
+    </main>
 
- <main class=" MAINmedia  justify-center ">
-    <nav class=" p-[50px] mediaNav  ">
-    <div class="Hassle_hustleMedia">
-        <h1 class="moreHustleMedia">Less hassle, more hustle</h1>
-        <p class="buildMedia">Build, run, and grow your entire ecommerce business with Zoho</p>
-    </div>
-    <div class="signupDivmedia pt-[20px] ">
-        <a class="signUPmedia" href="http://">SIGN UP TODAY</a>
-    </div>
-    </nav>
- </main>
-
-
-
- <div class="flex flex-col justify-center items-center pb-10 pt-[60px] footerM">
-    <a href="#"
-        class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
-        <img src="./Images Features/personalizedDemo.webp" alt="Demo Image" class="w-full h-auto object-cover">
-    </a>
-    <a href="#"
-        class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
-        <img src="./Images Features/successstories.webp" alt="YouTube Image"
-            class="w-full h-auto object-cover">
-    </a>
-    <a href="#"
-        class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
-        <img src="./Images Features/revenue.webp" alt="Survey Banner Image" class="w-full h-auto object-cover">
-    </a>
-</div>
+    <main class=" MAINmedia  justify-center ">
+        <nav class=" p-[50px] mediaNav  ">
+            <div class="Hassle_hustleMedia">
+                <h1 class="moreHustleMedia">Less hassle, more hustle</h1>
+                <p class="buildMedia">Build, run, and grow your entire ecommerce business with Zoho</p>
+            </div>
+            <div class="signupDivmedia pt-[20px] ">
+                <a class="signUPmedia" href="http://">SIGN UP TODAY</a>
+            </div>
+        </nav>
+    </main>
 
 
- <section class="bg-white py-[60px] footer">
-    <!-- Images at the footer -->
-    <div class="flex flex-col justify-center items-center pb-10">
-        <a href="#"
-            class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+
+    <div class="flex flex-col justify-center items-center pb-10 pt-[60px] footerM">
+        <a href="#" class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
             <img src="./Images Features/personalizedDemo.webp" alt="Demo Image" class="w-full h-auto object-cover">
         </a>
-        <a href="#"
-            class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
-            <img src="./Images Features/successstories.webp" alt="YouTube Image"
-                class="w-full h-auto object-cover">
+        <a href="#" class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+            <img src="./Images Features/successstories.webp" alt="YouTube Image" class="w-full h-auto object-cover">
         </a>
-        <a href="#"
-            class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+        <a href="#" class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
             <img src="./Images Features/revenue.webp" alt="Survey Banner Image" class="w-full h-auto object-cover">
         </a>
     </div>
 
-    <!-- Footer links -->
-    <div
-        class="container px-4 md:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-black text-sm mt-11">
-        <div>
-            <h3 class="font-bold mb-4">Features</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Inventory Management</a></li>
-                <li><a href="#">SEO</a></li>
-                <li><a href="#">Social Selling</a></li>
-                <li><a href="#">Product Recommendations</a></li>
-                <li><a href="#">Automated Emails</a></li>
-                <li><a href="#">Coupons</a></li>
-                <li><a href="#">Buy Now Button</a></li>
-                <li><a href="#">Product Reviews</a></li>
-                <li><a href="#">All Features</a></li>
-                <li><a href="#">Book a Demo</a></li>
-            </ul>
+
+    <section class="bg-white py-[60px] footer">
+        <!-- Images at the footer -->
+        <div class="flex flex-col justify-center items-center pb-10">
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images Features/personalizedDemo.webp" alt="Demo Image" class="w-full h-auto object-cover">
+            </a>
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images Features/successstories.webp" alt="YouTube Image" class="w-full h-auto object-cover">
+            </a>
+            <a href="#"
+                class="hover:scale-[1.05] duration-700 ease-in-out transition-all block mb-3 mx-auto max-w-[350px]">
+                <img src="./Images Features/revenue.webp" alt="Survey Banner Image" class="w-full h-auto object-cover">
+            </a>
         </div>
-        <div>
-            <h3 class="font-bold mb-4">Resources</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Insights & Blogs</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Live Webinars</a></li>
-                <li><a href="#">Developer Resources</a></li>
-                <li><a href="#">API Guide</a></li>
-                <li><a href="#">User Guide</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">GDPR</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="font-bold mb-4">Explore More</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Get Started</a></li>
-                <li><a href="#">Build Your Store</a></li>
-                <li><a href="#">Manage Store Operations</a></li>
-                <li><a href="#">Market Your Store</a></li>
-                <li><a href="#">Build Landing Pages</a></li>
-                <li><a href="#">Ecommerce Inventory</a></li>
-                <li><a href="#">Selling Online</a></li>
-                <li><a href="#">Ecommerce Website Builder</a></li>
-                <li><a href="#">Ecommerce Platform</a></li>
-                <li><a href="#">Sell Products Online</a></li>
-                <li><a href="#">Shopping Cart</a></li>
-                <li><a href="#">Facebook Integration</a></li>
-                <li><a href="#">The Complete Ecommerce Store</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="font-bold mb-4">Discover</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Themes</a></li>
-                <li><a href="#">Integrations</a></li>
-                <li><a href="#">Customer Stories</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="font-bold mb-4">Comparison</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Shopify</a></li>
-                <li><a href="#">Ecwid</a></li>
-                <li><a href="#">WooCommerce</a></li>
-                <li><a href="#">Magento Open Source</a></li>
-                <li><a href="#">BigCommerce</a></li>
-                <li><a href="#">Wix</a></li>
-            </ul>
-            <div class="mt-6">
-                <h3 class="font-bold mb-4">Connect with us</h3>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-2xl"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="#" class="text-2xl"><i class='bx bxl-twitter'></i></a>
-                    <a href="#" class="text-2xl"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="text-2xl"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#" class="text-2xl"><i class="bx bxl-youtube"></i></a>
+
+        <!-- Footer links -->
+        <div
+            class="container px-4 md:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-black text-sm mt-11">
+            <div>
+                <h3 class="font-bold mb-4">Features</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Inventory Management</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Social Selling</a></li>
+                    <li><a href="#">Product Recommendations</a></li>
+                    <li><a href="#">Automated Emails</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Buy Now Button</a></li>
+                    <li><a href="#">Product Reviews</a></li>
+                    <li><a href="#">All Features</a></li>
+                    <li><a href="#">Book a Demo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Insights & Blogs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Live Webinars</a></li>
+                    <li><a href="#">Developer Resources</a></li>
+                    <li><a href="#">API Guide</a></li>
+                    <li><a href="#">User Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Explore More</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Build Your Store</a></li>
+                    <li><a href="#">Manage Store Operations</a></li>
+                    <li><a href="#">Market Your Store</a></li>
+                    <li><a href="#">Build Landing Pages</a></li>
+                    <li><a href="#">Ecommerce Inventory</a></li>
+                    <li><a href="#">Selling Online</a></li>
+                    <li><a href="#">Ecommerce Website Builder</a></li>
+                    <li><a href="#">Ecommerce Platform</a></li>
+                    <li><a href="#">Sell Products Online</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Facebook Integration</a></li>
+                    <li><a href="#">The Complete Ecommerce Store</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Discover</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Customer Stories</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Comparison</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">Ecwid</a></li>
+                    <li><a href="#">WooCommerce</a></li>
+                    <li><a href="#">Magento Open Source</a></li>
+                    <li><a href="#">BigCommerce</a></li>
+                    <li><a href="#">Wix</a></li>
+                </ul>
+                <div class="mt-6">
+                    <h3 class="font-bold mb-4">Connect with us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="text-2xl"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#" class="text-2xl"><i class="bx bxl-youtube"></i></a>
+                    </div>
                 </div>
             </div>
+            <div>
+                <h3 class="font-bold mb-4">Collaborate</h3>
+                <ul class="space-y-2">
+                    <li><a href="#">Become a Partner</a></li>
+                    <li><a href="#">Hire a Specialist</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3 class="font-bold mb-4">Collaborate</h3>
-            <ul class="space-y-2">
-                <li><a href="#">Become a Partner</a></li>
-                <li><a href="#">Hire a Specialist</a></li>
-                <li><a href="#">Refer a Friend</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-<div class="MediaOption bg-[f5f5f5]">
-    <nav class="dropdownMedia">
-        <select name="Features" id="">
-            <option value="Features">Features</option>
-            <option value="Features">Inventory Manager</option>
-            <option value="Features">SEO</option>
-            <option value="Features">Social Selling</option>
-            <option value="Features">Product Recommendations</option>
-            <option value="Features">Automated Emails</option>
-            <option value="Features">Coupons</option>
-            <option value="Features">Buy Now Button</option>
-            <option value="Features">Product Rewview</option>
-            <option value="Features">All Features</option>
-            <option value="Features">Book  A Demo</option>
-        </select>
-    </nav>
-   <nav>
-    <select name="Features" id="">
-        <option value="Features">Discover</option>
-        <option value="Features">Guides</option>
-        <option value="Features">Themes</option>
-        <option value="Features">Integrations</option>
-        <option value="Features">Customer Stories</option>
-        <option value="Features">What's New</option>
-        <option value="Features">Pricing</option>
-    </select>
-   </nav>
-    <nav>
-        <select name="Features" id="">
-            <option value="Features">Resources</option>
-            <option value="Features">Insight & Blog</option>
-            <option value="Features">Community</option>
-            <option value="Features">Live Webinars</option>
-            <option value="Features">Developer Resources</option>
-            <option value="Features">API Guide</option>
-            <option value="Features">User Guide</option>
-            <option value="Features">FAQs</option>
-            <option value="Features">Cookie Policy</option>
-            <option value="Features">GDPR</option>
-        </select>
-    </nav>
-    <nav>
-        <select name="Features" id="">
-            <option value="Features">Comparison</option>
-            <option value="Features">Shopify</option>
-            <option value="Features">Ecwid</option>
-            <option value="Features">WooCommerce</option>
-            <option value="Features">Magento Open Source</option>
-            <option value="Features">Big Commerce</option>
-            <option value="Features">Wix</option>
-        </select>
-    </nav>
-    <!-- <nav>
+    <div class="MediaOption bg-[f5f5f5]">
+        <nav class="dropdownMedia">
+            <select name="Features" id="">
+                <option value="Features">Features</option>
+                <option value="Features">Inventory Manager</option>
+                <option value="Features">SEO</option>
+                <option value="Features">Social Selling</option>
+                <option value="Features">Product Recommendations</option>
+                <option value="Features">Automated Emails</option>
+                <option value="Features">Coupons</option>
+                <option value="Features">Buy Now Button</option>
+                <option value="Features">Product Rewview</option>
+                <option value="Features">All Features</option>
+                <option value="Features">Book A Demo</option>
+            </select>
+        </nav>
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Discover</option>
+                <option value="Features">Guides</option>
+                <option value="Features">Themes</option>
+                <option value="Features">Integrations</option>
+                <option value="Features">Customer Stories</option>
+                <option value="Features">What's New</option>
+                <option value="Features">Pricing</option>
+            </select>
+        </nav>
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Resources</option>
+                <option value="Features">Insight & Blog</option>
+                <option value="Features">Community</option>
+                <option value="Features">Live Webinars</option>
+                <option value="Features">Developer Resources</option>
+                <option value="Features">API Guide</option>
+                <option value="Features">User Guide</option>
+                <option value="Features">FAQs</option>
+                <option value="Features">Cookie Policy</option>
+                <option value="Features">GDPR</option>
+            </select>
+        </nav>
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Comparison</option>
+                <option value="Features">Shopify</option>
+                <option value="Features">Ecwid</option>
+                <option value="Features">WooCommerce</option>
+                <option value="Features">Magento Open Source</option>
+                <option value="Features">Big Commerce</option>
+                <option value="Features">Wix</option>
+            </select>
+        </nav>
+        <!-- <nav>
         <select name="Features" id="">
             <option value="Features">Connect With Us</option>
             <div class="dropDimgMQ"><option value="Features"><img src="./fb_icon.png" alt=""></option>
@@ -641,112 +815,114 @@
                 <option value="Features"><img src="./ytlogo.png" alt=""></option></div>
         </select>
        </nav> -->
-       <nav>
-        <select name="Features" id="">
-            <option value="Features">Collaborate</option>
-            <option value="Features">Become A Partner</option>
-            <option value="Features">Hire A Specialist</option>
-            <option value="Features">Refer A Friend</option>
-        </select>
-       </nav>
-       <nav>
-        <select name="Features" id="">
-            <option value="Features">Contact Us</option>
-            <option value="Features">Zoho Home</option>
-            <option value="Features">Contact By Phone</option>
-            <option value="Features">Contact By Email</option>
-        </select>
-       </nav>
-       <nav>
-        <select name="Features" id="">
-            <option value="Features">Security & Privacy</option>
-            <option value="Features">Security</option>
-            <option value="Features">Compliance</option>
-            <option value="Features">IRP Complaints</option>
-            <option value="Features">Anti-spam Policy</option>
-            <option value="Features">Term of Service</option>
-            <option value="Features">Privacy Policy</option>
-            <option value="Features">Cookies Policy</option>
-            <option value="Features">GDPR Complaints</option>
-            <option value="Features">Abuse Policy</option>
-        </select>
-       </nav>
-</div>
-
-
-<div class=" flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 pt-[20px] leading-none DMQ bg-[f5f5f5]">
-    <a href="support@zohocommerce.com" class="text-blue-500 flex items-center">
-        <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
-    </a>
-    <a href="marketing@zohocommerce.com" class="text-blue-500 flex items-center">
-        <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
-    </a>
-</div>
-
-<div class="containerMedia mx-auto flex flex-row justify-center items-center">
-    <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
-        placeholder="Search for product overviews, FAQs, and more...">
-    <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
-        <i class="bx bx-search text-[20px]"></i>
-    </button>
-</div>
-
-
-<footer class="bg-gray-100 FOOTER">
-    
-    <div class="border-b py-2 flex flex-col sm:flex-row justify-between items-center px-4">
-        <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-            <a href="mailto:support@zohocommerce.com" class="text-blue-500 flex items-center">
-                <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
-            </a>
-            <a href="mailto:marketing@zohocommerce.com" class="text-blue-500 flex items-center">
-                <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
-            </a>
-        </div>
-        <div class="flex items-center space-x-4 mt-2 sm:mt-0">
-            <i class="bx bx-globe"></i>
-            <select class="bg-gray-100 border-none outline-none">
-                <option value="en">English</option>
-                <option value="en">French</option>
-                <option value="en">Spanish</option>
-               
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Collaborate</option>
+                <option value="Features">Become A Partner</option>
+                <option value="Features">Hire A Specialist</option>
+                <option value="Features">Refer A Friend</option>
             </select>
-        </div>
+        </nav>
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Contact Us</option>
+                <option value="Features">Zoho Home</option>
+                <option value="Features">Contact By Phone</option>
+                <option value="Features">Contact By Email</option>
+            </select>
+        </nav>
+        <nav>
+            <select name="Features" id="">
+                <option value="Features">Security & Privacy</option>
+                <option value="Features">Security</option>
+                <option value="Features">Compliance</option>
+                <option value="Features">IRP Complaints</option>
+                <option value="Features">Anti-spam Policy</option>
+                <option value="Features">Term of Service</option>
+                <option value="Features">Privacy Policy</option>
+                <option value="Features">Cookies Policy</option>
+                <option value="Features">GDPR Complaints</option>
+                <option value="Features">Abuse Policy</option>
+            </select>
+        </nav>
     </div>
 
-    
-    <div class="py-12 mx-4">
-        <div class="container mx-auto flex flex-row justify-center items-center">
-            <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
-                placeholder="Search for product overviews, FAQs, and more...">
-            <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
-                <i class="bx bx-search text-[20px]"></i>
-            </button>
-        </div>
+
+    <div
+        class=" flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 pt-[20px] leading-none DMQ bg-[f5f5f5]">
+        <a href="support@zohocommerce.com" class="text-blue-500 flex items-center">
+            <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
+        </a>
+        <a href="marketing@zohocommerce.com" class="text-blue-500 flex items-center">
+            <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
+        </a>
     </div>
 
-   
-    <div class="bg-gray-100 py-6">
-        <div class="hidden md:flex container mx-auto flex-wrap justify-center space-x-4 text-sm">
-            <a href="#" class="hover:underline">Zoho Home</a>
-            <a href="#" class="hover:underline">Contact Us</a>
-            <a href="#" class="hover:underline">Security</a>
-            <a href="#" class="hover:underline">Compliance</a>
-            <a href="#" class="hover:underline">IPR Complaints</a>
-            <a href="#" class="hover:underline">Anti-spam Policy</a>
-            <a href="#" class="hover:underline">Terms of Service</a>
-            <a href="#" class="hover:underline">Privacy Policy</a>
-            <a href="#" class="hover:underline">Cookie Policy</a>
-            <a href="#" class="hover:underline">GDPR Compliance</a>
-            <a href="#" class="hover:underline">Abuse Policy</a>
-        </div>
-        <div class="text-center text-sm mt-4">
-            &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
-        </div>
+    <div class="containerMedia mx-auto flex flex-row justify-center items-center">
+        <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
+            placeholder="Search for product overviews, FAQs, and more...">
+        <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
+            <i class="bx bx-search text-[20px]"></i>
+        </button>
     </div>
-</footer>
-<div class="text-center text-sm mt-[20px] footerMEDIAq bg-[#F5F5F5]">
-    &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
-</div>
+
+
+    <footer class="bg-gray-100 FOOTER">
+
+        <div class="border-b py-2 flex flex-col sm:flex-row justify-between items-center px-4">
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:support@zohocommerce.com" class="text-blue-500 flex items-center">
+                    <i class="bx bx-envelope mr-2"></i> support@zohocommerce.com
+                </a>
+                <a href="mailto:marketing@zohocommerce.com" class="text-blue-500 flex items-center">
+                    <i class="bx bx-envelope mr-2"></i> marketing@zohocommerce.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 mt-2 sm:mt-0">
+                <i class="bx bx-globe"></i>
+                <select class="bg-gray-100 border-none outline-none">
+                    <option value="en">English</option>
+                    <option value="en">French</option>
+                    <option value="en">Spanish</option>
+
+                </select>
+            </div>
+        </div>
+
+
+        <div class="py-12 mx-4">
+            <div class="container mx-auto flex flex-row justify-center items-center">
+                <input type="text" class="border rounded-lg w-full sm:w-2/3 p-4"
+                    placeholder="Search for product overviews, FAQs, and more...">
+                <button class="mt-0 ml-1 sm:ml-4 bg-gray-200 p-4 rounded-lg">
+                    <i class="bx bx-search text-[20px]"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="bg-gray-100 py-6">
+            <div class="hidden md:flex container mx-auto flex-wrap justify-center space-x-4 text-sm">
+                <a href="#" class="hover:underline">Zoho Home</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+                <a href="#" class="hover:underline">Security</a>
+                <a href="#" class="hover:underline">Compliance</a>
+                <a href="#" class="hover:underline">IPR Complaints</a>
+                <a href="#" class="hover:underline">Anti-spam Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Cookie Policy</a>
+                <a href="#" class="hover:underline">GDPR Compliance</a>
+                <a href="#" class="hover:underline">Abuse Policy</a>
+            </div>
+            <div class="text-center text-sm mt-4">
+                &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-sm mt-[20px] footerMEDIAq bg-[#F5F5F5]">
+        &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
+    </div>
 </body>
+
 </html>
