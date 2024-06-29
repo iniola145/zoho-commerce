@@ -6,6 +6,7 @@
     --lightgreen: #01EE65;
     --lightergreen: #D8F6E6;
     --darkgreen: #003F3C;
+    scroll-behavior: smooth;
 }
 .cursive-p{
     font-family: "Caveat", cursive;
@@ -16,3 +17,197 @@
     background-size: cover;
     background-position: center;
 }
+/* For animations */
+.store-btn {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.store-btn:hover{
+    /* animation: up 1s ease-in-out forwards; */
+    transform: translateY(-10px);
+}
+.store-btn::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    z-index: -10;
+    opacity: 0;
+    border-radius: 9999px;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+.store-btn:hover::before {
+    opacity: 1;
+}
+.store-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: var(--lightgreen);
+    z-index: -2;
+}
+
+/* Schedule a free demo Button */
+.demo-btn{
+    position: relative;
+    overflow: hidden;
+}
+.demo-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-radius: 30px;
+    height: 100%;
+    background-color: var(--lightgreen);
+    z-index: -1;
+    transition: 0.5s all ease-in-out;
+}
+.demo-btn:hover::before{
+    width: 100%;
+}
+
+/* @keyframes up {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+} */
+
+/* Navbar dropdown */
+.bxs-down-arrow{
+    font-size: 10px;
+}
+.div-reveal .reveal{
+  transition: all .5s;
+  transform: translateY(30px);
+  opacity: 0;
+  display: flex;
+  visibility: hidden;
+}
+.div-reveal:hover .reveal{
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+}
+
+.nav{
+  animation: zoom 1s ease-in-out;
+  animation-delay: calc(.1s * var(--i));
+}
+
+/* sticky class for Navbar */
+.new {
+    border: 1px solid #E7EBF0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: slidedown .7s forwards;
+  }
+
+  @keyframes slidedown {
+    from {
+      top: -250px;
+    }
+
+    to {
+      top: 0px;
+    }
+  }
+
+/* SWIPER STYLESHEET */
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: white;
+}
+.swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+.swiper {
+    width: 90vw;
+  }
+
+/* Just testing out animations, not needed in the code */
+
+.nav{
+    animation: zoom 1s ease-in-out;
+    animation-delay: calc(.1s * var(--i));
+}
+/* .first{
+    animation: top 1s ease-in-out;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.second{
+    animation: top 1s ease-in-out;
+    animation-delay: calc(.3s * var(--i));
+} */
+/* 
+@keyframes top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes bottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+} */
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
