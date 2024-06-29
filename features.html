@@ -13,15 +13,75 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 
 <body>
+    <!-- First Navbar -->
+    <header class="hidden md:flex items-center py-8 justify-between bg-white h-[70px]">
+        <div class="flex items-center">
 
+            <div class="w-[105px] pt-2 bg-white">
+                <img class="w-[100%]" src="./Images Features/zoho_logo.png" alt="">
+            </div>
+            <ul class="flex p-4">
+                <li class="p-2"><a href="#">Books</a></li>
+                <li class="p-2"><a href="#">Social</a></li>
+                <li class="p-2"><a href="#">SalesIQ</a></li>
+                <li class="p-2"><a href="#">PageSense</a></li>
+                <li class="p-2"><a href="#">Inventory</a></li>
+                <li class="p-2"><a href="#">Billing</a></li>
+                <li class="p-2"> <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">All
+                        Products <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                        </ul>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="flex justify-between items-center p-1">
+            <div class="pt-3">
+                <i class="bi bi-search pr-5"></i>
+            </div>
+            <div class="pr-10 pt-3">
+                <p class="text-[#F0483E] text-[12px] font-bold cursor-pointer">SIGN IN</p>
+            </div>
+            <div class="bg-[#F0483E]">
+                <h1 class="text-white p-3 font-bold text-[15px] cursor-pointer">GET STARTED</h1>
+            </div>
+        </div>
+    </header>
     <!-- Navigation menu -->
     <nav
-        class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
-        <a href="#"><img src="./Images Features/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
+        class="wrap-nav flex py-5 px-6 items-center z-50 bg-white justify-between md:border-t-[1px] md:border-t-solid md:border-t-[#E7EBF0]">
+        <a href="index.html"><img src="./Images Features/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
         <a href="#" class="nav inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
         <!-- Menu options -->
         <ul class="hidden md:flex space-x-4 lg:space-x-11">
@@ -29,7 +89,7 @@
                 <a href="javascript:void(0)" class="pr-1">Features</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-4 absolute top-[100%] left-0 !w-[450px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-4 z-50 absolute top-[100%] left-0 !w-[450px] rounded-lg reveal">
                     <div class="flex flex-wrap gap-8">
                         <ul>
                             <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
@@ -80,7 +140,7 @@
                 <a href="javascript:void(0)" class="pr-1">Themes</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal z-50">
                     <ul>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Health &
                             Beauty</li>
@@ -106,7 +166,7 @@
                 <a href="javascript:void(0)" class="pr-1">Integrations</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal z-50">
                     <ul>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Shipping
                             Carriers</li>
@@ -133,7 +193,7 @@
                 <a href="javascript:void(0)" class="pr-1">Customers</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-3 absolute top-[100%] left-0 !w-[190px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-3 absolute top-[100%] left-0 !w-[190px] rounded-lg reveal z-50">
                     <ul>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Customer
                             Stories</li>
@@ -146,7 +206,7 @@
                 <a href="javascript:void(0)" class="pr-1">Resources</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal z-50">
                     <ul>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Guides</li>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Insights &
@@ -172,7 +232,7 @@
                 <a href="javascript:void(0)" class="pr-1">Support</a>
                 <i class='bx bxs-down-arrow'></i>
                 <div
-                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] right-0 !w-[220px] rounded-lg reveal">
+                    class="flex-col items-center bg-white shadow-xl p-5 absolute top-[100%] right-0 !w-[220px] z-50 rounded-lg reveal">
                     <ul>
                         <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Book a Demo
                         </li>
@@ -189,21 +249,21 @@
         </ul>
     </nav>
 
-    <!-- Prosper's menu bar -->
+    <!-- Prosper's menu -->
     <!-- <nav class="nav flex justify-between py-5 px-4 items-center fixed left-0 right-0 bg-transparent">
-        <a class="first" href="#"><img src="./Images Features/commerce.jpg" alt="zoho" ></a>
+        <a class="first" href="index.html"><img src="./Images/commerce.jpg" alt="zoho" ></a>
        
         <ul class="underList">
             <li class="nav11 inline-block"><a href="#" class="px-7">Features</a></li>
-            <li class="nav11 inline-block"><a href="#" class="px-7">Pricing</a></li>
-            <li class="nav11 inline-block"><a href="#" class="px-7">Themes</a></li>
-            <li class="nav11 inline-block"><a href="#" class="px-7">Integrations</a></li>
+            <li class="nav11 inline-block"><a href="pricing.html" class="px-7">Pricing</a></li>
+            <li class="nav11 inline-block"><a href="themes.html" class="px-7">Themes</a></li>
+            <li class="nav11 inline-block"><a href="integrations.html" class="px-7">Integrations</a></li>
             <li class="nav11 inline-block"><a href="#" class="px-7">Customers</a></li>
             <li class="nav11 inline-block"><a href="#" class="px-7">Resources</a></li>
-            <li class="nav11 inline-block"><a href="#" class="px-7">Support</a></li>
+            <li class="nav11 inline-block"><a href="integration.html" class="px-7">Support</a></li>
         </ul>
 
-        <a class="mediafirst" href="#"><img src="./Images Features/commerce.jpg" alt="zoho" ></a>
+        <a class="mediafirst" href="#"><img src="./Images/commerce.jpg" alt="zoho" ></a>
         <a class="MI" href="#"><img src="./Screenshot 2024-06-23 165719.png" alt="zoho" ></a>
     </nav>     -->
 
@@ -221,7 +281,7 @@
         </div>
 
         <div class="w-1/2">
-            <img class="image" src="./Images Features/customer-journey-illustration.webp" alt="">
+            <img class="image" src="./Images/customer.jpg" alt="">
         </div>
 
 
@@ -252,7 +312,7 @@
         <div class="grid-container">
             <div class="flex flex-wrap GC">
                 <div class="grid-item">
-                    <img class="containerImage" src="./Images Features/image.png" alt="image">
+                    <img class="containerImage" src="./Images Features/image.jpg" alt="image">
                     <h2>Infrastructure</h2>
                     <p>Launch your website with ready infrastructure - SSL, sub-domain, and hosting.</p>
                     <a href="#">Learn more</a>
@@ -923,6 +983,13 @@
     <div class="text-center text-sm mt-[20px] footerMEDIAq bg-[#F5F5F5]">
         &copy; 2024, Zoho Corporation Pvt. Ltd. All Rights Reserved.
     </div>
+    <script>
+        // Sticky Navbar animation
+        const nav_bar = document.querySelector(".wrap-nav")
+        window.addEventListener("scroll", () => {
+            this.scrollY > 30 ? nav_bar.classList.add("new") : nav_bar.classList.remove("new")
+        })
+    </script>
 </body>
 
 </html>
