@@ -1,20 +1,46 @@
 /* Navbar dropdown */
 .bxs-down-arrow{
     font-size: 10px;
-  }
-  .div-reveal .reveal{
+}
+.div-reveal .reveal{
   transition: all .5s;
   transform: translateY(30px);
   opacity: 0;
   display: flex;
   visibility: hidden;
-  }
-  .div-reveal:hover .reveal{
+}
+.div-reveal:hover .reveal{
   opacity: 1;
   transform: translateY(0px);
   visibility: visible;
+}
+
+.nav{
+  animation: zoom 1s ease-in-out;
+  animation-delay: calc(.1s * var(--i));
+}
+
+/* sticky class for Navbar */
+.new {
+    border: 1px solid #E7EBF0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: slidedown .7s forwards;
   }
-  
+
+  @keyframes slidedown {
+    from {
+      top: -250px;
+    }
+
+    to {
+      top: 0px;
+    }
+  }
+
 .first{
     width: 150px;
     margin-left: 45px;
@@ -163,9 +189,6 @@ body {
     font-family: sans-serif;
     margin-left: 60px;
 }
-/* .Hassle_hustle{
-
-} */
 .build{
     font-family: sans-serif;
     font-style: bold;
