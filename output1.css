@@ -1353,10 +1353,6 @@ video {
   padding-top: 0.75rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1931,21 +1927,8 @@ video {
     border-width: 0px;
   }
 
-  .md\:border-\[1px\] {
-    border-width: 1px;
-  }
-
   .md\:border-t-\[1px\] {
     border-top-width: 1px;
-  }
-
-  .md\:border-solid {
-    border-style: solid;
-  }
-
-  .md\:border-\[\#E7EBF0\] {
-    --tw-border-opacity: 1;
-    border-color: rgb(231 235 240 / var(--tw-border-opacity));
   }
 
   .md\:border-t-\[\#E7EBF0\] {

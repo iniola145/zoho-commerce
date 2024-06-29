@@ -107,6 +107,26 @@
   animation-delay: calc(.1s * var(--i));
 }
 
+/* sticky class for Navbar */
+.new {
+    border: 1px solid #E7EBF0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: slidedown .7s forwards;
+  }
+
+  @keyframes slidedown {
+    from {
+      top: -250px;
+    }
+
+    to {
+      top: 0px;
+    }
+  }
 
 /* SWIPER STYLESHEET */
 .swiper-button-prev::after, .swiper-button-next::after {
