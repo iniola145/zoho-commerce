@@ -16,32 +16,240 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="w-fit">
+      <!-- First Navbar -->
+  <header class="hidden md:flex items-center py-8 justify-between bg-white h-[70px]">
+    <div class="flex items-center">
+
+      <div class="w-[105px] pt-2 bg-white">
+        <img class="w-[100%]" src="./Image Integration/zoho_logo.png" alt="">
+      </div>
+      <ul class="flex p-4">
+        <li class="p-2"><a href="#">Books</a></li>
+        <li class="p-2"><a href="#">Social</a></li>
+        <li class="p-2"><a href="#">SalesIQ</a></li>
+        <li class="p-2"><a href="#">PageSense</a></li>
+        <li class="p-2"><a href="#">Inventory</a></li>
+        <li class="p-2"><a href="#">Billing</a></li>
+        <li class="p-2"> <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">All
+            Products <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                out</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="flex justify-between items-center p-1">
+      <div class="pt-3">
+        <i class="bi bi-search pr-5"></i>
+      </div>
+      <div class="pr-10 pt-3">
+        <p class="text-[#F0483E] text-[12px] font-bold cursor-pointer">SIGN IN</p>
+      </div>
+      <div class="bg-[#F0483E]">
+        <h1 class="text-white p-3 font-bold text-[15px] cursor-pointer">GET STARTED</h1>
+      </div>
+    </div>
+  </header>
+
     <!-- Navigation menu -->
     <nav
-        class="flex py-5 px-6 items-center fixed top-0 left-0 right-0 z-50 bg-white justify-between md:border-[1px] md:border-solid md:border-[#E7EBF0]">
+        class="wrap-nav flex py-5 px-6 items-center z-50 bg-white justify-between md:border-t-[1px] md:border-t-solid md:border-t-[#E7EBF0]">
         <a href="#"><img src="./Images/commerce.jpg" alt="zoho" class="nav h-[44px]"></a>
         <a href="#" class="nav inline text-[2rem] md:hidden" x><i class='bx bx-menu'></i></a>
         <!-- Menu options -->
-        <ul class="hidden md:block space-x-4 lg:space-x-11">
-            <li class="nav inline-block "><a href="#" class="move text-[13px] lg:text-[15px]">Features</a>
+        <ul class="hidden md:flex space-x-4 lg:space-x-11">
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Features</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-4 z-50 absolute top-[100%] left-0 !w-[500px] rounded-lg reveal">
+                    <div class="flex flex-wrap gap-8">
+                        <ul>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Infrastructure</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Pre-built Themes</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Site
+                                Builder</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Visual
+                                Editor</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Multi-currency View
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Pages
+                                and Files</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Blog
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                                Filters</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Message
+                                and Cookie Bar
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                                Management
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">
+                                Categories and
+                                Collections</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Order
+                                Management</li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Customer
+                                Management
+                            </li>
+                            <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">User
+                                Management</li>
+                        </ul>
+                    </div>
+                    <a href="features.html" class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">See
+                        All
+                        Features</a>
+                </div>
             </li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Pricing</a>
+            <li class="nav flex items-center text-[13px] lg:text-[15px]"><a href="">Pricing</a></li>
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Themes</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl z-50 p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Health &
+                            Beauty</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Fashion &
+                            Clothing</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Food & Drink
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Home &
+                            Garden</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Furniture &
+                            Manufacturing</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Gifts, Toys
+                            & Games</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Electronics
+                        </li>
+                    </ul>
+                    <a href="themes.html" class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Themes</a>
+                </div>
             </li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Themes</a>
+            <li class="nav flex items-center relative div-reveal cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Integrations</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 z-50 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Shipping
+                            Carriers</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Payment
+                            Gateways</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Marketing
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Analytics
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Accounting &
+                            Taxes</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">CRM & Stock
+                            Management
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Productivity
+                        </li>
+                    </ul>
+                    <a href="integration.html" class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Integrations</a>
+                </div>
             </li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Integrations</a></li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Customers</a>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Customers</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl z-50 p-3 absolute top-[100%] left-0 !w-[190px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Customer
+                            Stories</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Refer a
+                            Friend</li>
+                    </ul>
+                </div>
             </li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Resources</a>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Resources</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl z-50 p-5 absolute top-[100%] left-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Guides</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Insights &
+                            Blogs</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Product
+                            Onboarding</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">What's New
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Find a
+                            Specialist</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">On-demand
+                            Webinars</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">FAQ</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Knowledge
+                            Base</li>
+                    </ul>
+                    <a href="" class="mt-4 py-3 px-5 border-2 border-black rounded-lg duration-500 hover:bg-[#01EE65]">All
+                        Resources</a>
+                </div>
             </li>
-            <li class="nav inline-block"><a href="#" class="move text-[13px] lg:text-[15px]">Support</a>
+            <li class="nav flex items-center relative div-reveal  cursor-pointer text-[13px] lg:text-[15px]">
+                <a href="javascript:void(0)" class="pr-1">Support</a>
+                <i class='bx bxs-down-arrow'></i>
+                <div
+                    class="flex-col items-center bg-white shadow-xl p-5 z-50 absolute top-[100%] right-0 !w-[220px] rounded-lg reveal">
+                    <ul>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Book a Demo
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Register for
+                            Live
+                            Webinars</li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">API Guide
+                        </li>
+                        <li class="cursor-pointer hover:text-[#03A9F6] hover:bg-[#FAFAFA] duration-500 p-2">Developer
+                            Resources</li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </nav>
+
     <!-- First page -->
     <section class="py-[90px] md:py-[140px] px-4 sm:px-10 md:px-10 lg:px-20 w-full md:w-fit page-1">
         <div class="py-8">
@@ -121,76 +329,101 @@
                 </a>
             </div>
 
-            <!-- Image section 1 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/templates-1.jpg" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 1 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show your brand in bold</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Pick from an array of customizable ecommerce store themes for your online store and attract your
-                    kind of customers.
-                </p>
-            </div>
-            <!-- Media query divider 1 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mb-10">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 1 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/templates-1.jpg" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 1 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Show
+                                your
+                                brand
+                                in bold</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Pick from an array of customizable ecommerce store themes for your online store and
+                                attract
+                                your
+                                kind of customers.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 2 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/sitebuilder.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 2 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch
+                                with
+                                zero code</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Save time and costs on coding and confidently run your store on zero code. Pick a
+                                domain,
+                                list
+                                your
+                                products, and start selling - it is as easy as it sounds.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 3 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/visual-editor.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 3 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">
+                                Customize,
+                                start to finish</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Show your buyers how easy and secure it is to shop from you, from adding products to
+                                their
+                                carts
+                                till having a clean, customizable checkout process.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <!-- Image section 4 -->
+                        <div class="flex justify-center mt-16">
+                            <img src="./Images/products.png" alt="Ecommerce Themes"
+                                class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
+                        </div>
+                        <!-- Text section 4 -->
+                        <div class="mt-10">
+                            <p class="text-center text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate
+                                pretty
+                                displays</p>
+                            <p class="text-center mx-auto w-[50vw] mt-4 text-white text-lg md:text-xl lg:text-2xl">
+                                Thoughtfully list, categorize, and add your products to a collection, making sure you
+                                display
+                                your
+                                products within a click's reach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Image section 2 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/sitebuilder.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 2 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Launch with zero code</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Save time and costs on coding and confidently run your store on zero code. Pick a domain, list your
-                    products, and start selling - it is as easy as it sounds.
-                </p>
-            </div>
-            <!-- Media query divider 2 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-            <!-- Image section 3 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/visual-editor.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 3 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Customize, start to finish</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Show your buyers how easy and secure it is to shop from you, from adding products to their carts
-                    till having a clean, customizable checkout process.
-                </p>
-            </div>
-            <!-- Media query divider 3 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
-            </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
 
-            <!-- Image section 4 -->
-            <div class="flex justify-center mt-16">
-                <img src="./Images/products.png" alt="Ecommerce Themes"
-                    class="hover:scale-110 duration-700 ease-in-out w-full md:w-2/3 lg:w-1/2">
-            </div>
-            <!-- Text section 4 -->
-            <div class="mt-10">
-                <p class="text-[#01EE65] text-2xl md:text-3xl lg:text-4xl font-semibold">Curate pretty displays</p>
-                <p class="mt-4 text-white text-lg md:text-xl lg:text-2xl">
-                    Thoughtfully list, categorize, and add your products to a collection, making sure you display your
-                    products within a click's reach.
-                </p>
-            </div>
-            <!-- Media query divider 4 -->
-            <div
-                class="flex flex-col border-[1px] border-solid border-[#274f4d] md:flex-row justify-between items-center mt-10">
             </div>
         </div>
     </section>
