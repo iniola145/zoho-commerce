@@ -90,6 +90,6 @@ const swiper = new Swiper(".swiper", {
 // Sticky Navbar animation
 const nav_bar = document.querySelector(".wrap-nav")
 window.addEventListener("scroll", () => {
-    this.scrollY > 30 ? nav_bar.classList.add("new") : nav_bar.classList.remove("new")
+    this.scrollY > 100 ? nav_bar.classList.add("new") : nav_bar.classList.remove("new")
 })
 
