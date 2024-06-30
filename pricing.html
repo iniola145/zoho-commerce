@@ -618,7 +618,7 @@
             toggleButton.addEventListener('click', () => {
                 nairaValues.forEach((value, index) => {
                     if (isNaira) {
-                        value.innerHTML = `${dollarValues[index]}`;
+                        value.innerHTML = parseInt(dollarValues[index].replace(/,/g, ''), 10).toLocaleString();
                         toggleButton.classList.add('active');
                     } else {
                         value.innerHTML = parseInt(originalValues[index].replace(/,/g, ''), 10).toLocaleString();
