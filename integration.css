@@ -5,20 +5,22 @@
 }
 
 /* Navbar dropdown */
-.bxs-down-arrow{
+.bxs-down-arrow {
   font-size: 10px;
 }
-.div-reveal .reveal{
-transition: all .5s;
-transform: translateY(30px);
-opacity: 0;
-display: flex;
-visibility: hidden;
+
+.div-reveal .reveal {
+  transition: all .5s;
+  transform: translateY(30px);
+  opacity: 0;
+  display: flex;
+  visibility: hidden;
 }
-.div-reveal:hover .reveal{
-opacity: 1;
-transform: translateY(0px);
-visibility: visible;
+
+.div-reveal:hover .reveal {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
 }
 
 /* sticky class for Navbar */
@@ -44,41 +46,65 @@ visibility: visible;
 
 .logo-container {
   display: flex;
-  flex-wrap: wrap; /* Allow logos to wrap if needed */
-  justify-content: center; /* Center logos horizontally */
-  align-items: center; /* Center logos vertically */
-  height: 400px; /* Adjust height as necessary */
+  flex-wrap: wrap;
+  /* Allow logos to wrap if needed */
+  justify-content: center;
+  /* Center logos horizontally */
+  align-items: center;
+  /* Center logos vertically */
+  height: 400px;
+  /* Adjust height as necessary */
   transform: rotate(-20deg);
-  overflow: hidden; /* Remove this line or set to auto */
-  margin: 0 auto; /* Add auto to center the container horizontally */
-  padding: 20px; /* Add some padding to create space around the logos */
-  max-width: 700px; /* Set a maximum width to prevent overflow */
+  overflow: hidden;
+  /* Remove this line or set to auto */
+  margin: 0 auto;
+  /* Add auto to center the container horizontally */
+  padding: 20px;
+  /* Add some padding to create space around the logos */
+  max-width: 700px;
+  /* Set a maximum width to prevent overflow */
 }
 
 .logo {
-  margin: 15px; /* Adjust spacing between logos */
-  animation: zoomIn 1s ease-out forwards; /* Apply animation */
-  opacity: 1; /* Initially hide the logos */
+  margin: 15px;
+  /* Adjust spacing between logos */
+  animation: zoomIn 1s ease-out forwards;
+  /* Apply animation */
+  opacity: 1;
+  /* Initially hide the logos */
   width: 100px;
-  flex: 0 0 100px; /* Set a fixed width and make it flexible */
+  flex: 0 0 100px;
+  /* Set a fixed width and make it flexible */
 }
 
 /* Define the zoomIn animation */
 @keyframes zoomIn {
   0% {
-    transform: scale(0.5); /* Start smaller */
-    opacity: 0; 
+    transform: scale(0.5);
+    /* Start smaller */
+    opacity: 0;
   }
+
   100% {
-    transform: scale(1);  /* End at full size */
+    transform: scale(1);
+    /* End at full size */
     opacity: 1;
   }
 }
 
 /* Add random delays to each logo (using nth-child) */
-.image:nth-child(1) { animation-delay: 0.2s; }
-.image:nth-child(2) { animation-delay: 0.4s; }
-.image:nth-child(3) { animation-delay: 0.6s; }
+.image:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.image:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.image:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
 /* ... and so on for each logo ... */
 
 
@@ -93,37 +119,64 @@ visibility: visible;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 400px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-height: 430px;
 }
-.second .dropdown-content2, .second .dropdown-content3, .second .dropdown-content4, .second .dropdown-content5, .second .dropdown-content6 {
+
+.second .dropdown-content2,
+.second .dropdown-content3,
+.second .dropdown-content4,
+.second .dropdown-content5,
+.second .dropdown-content6 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-height: 10px;
 }
 
-.second .dropdown-content1 a,.second .dropdown-content2 a, .second .dropdown-content3 a, .second .dropdown-content4 a, .second .dropdown-content5 a, .second .dropdown-content6 a {
+.second .dropdown-content1 a,
+.second .dropdown-content2 a,
+.second .dropdown-content3 a,
+.second .dropdown-content4 a,
+.second .dropdown-content5 a,
+.second .dropdown-content6 a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.second .dropdown-content1 a:hover, .second .dropdown-content2 a:hover, .second .dropdown-content3 a:hover, .second .dropdown-content4 a:hover, .second .dropdown-content5 a:hover, .second .dropdown-content6 a:hover {
+.second .dropdown-content1 a:hover,
+.second .dropdown-content2 a:hover,
+.second .dropdown-content3 a:hover,
+.second .dropdown-content4 a:hover,
+.second .dropdown-content5 a:hover,
+.second .dropdown-content6 a:hover {
   color: rgba(0, 119, 255, 0.767);
 }
 
-.second .dropdown-content1 a:hover,.second .dropdown-content2 a:hover, .second .dropdown-content3 a:hover, .second .dropdown-content4 a:hover, .second .dropdown-content5 a:hover, .second .dropdown-content6 a:hover {background-color: #f1f1f1}
+.second .dropdown-content1 a:hover,
+.second .dropdown-content2 a:hover,
+.second .dropdown-content3 a:hover,
+.second .dropdown-content4 a:hover,
+.second .dropdown-content5 a:hover,
+.second .dropdown-content6 a:hover {
+  background-color: #f1f1f1
+}
 
 .second .dropdown:hover .dropdown-content1 {
   display: flex;
 }
-.second .dropdown:hover .dropdown-content2, .second .dropdown:hover .dropdown-content3, .second .dropdown:hover .dropdown-content4, .second .dropdown:hover .dropdown-content5, .second .dropdown:hover .dropdown-content6 {
+
+.second .dropdown:hover .dropdown-content2,
+.second .dropdown:hover .dropdown-content3,
+.second .dropdown:hover .dropdown-content4,
+.second .dropdown:hover .dropdown-content5,
+.second .dropdown:hover .dropdown-content6 {
   display: block;
 }
 
@@ -152,6 +205,7 @@ visibility: visible;
   padding: 10px;
   border-radius: 8px;
 }
+
 .second .dropdown .dropdown-content2 .see_all_themes {
   width: 140px;
   border: 1px solid;
@@ -160,6 +214,7 @@ visibility: visible;
   margin-bottom: 5px;
   border-radius: 8px;
 }
+
 .second .dropdown .dropdown-content3 .see_all_intigrations {
   width: 160px;
   border: 1px solid;
@@ -173,10 +228,12 @@ visibility: visible;
   color: rgba(0, 119, 255, 0.767);
   cursor: pointer;
 }
+
 .second .dropdown .dropdown-content2 .see_all_themes:hover {
   color: rgba(0, 119, 255, 0.767);
   cursor: pointer;
 }
+
 .second .dropdown .dropdown-content3 .see_all_intigrations:hover {
   color: rgba(0, 119, 255, 0.767);
   cursor: pointer;
@@ -189,7 +246,8 @@ visibility: visible;
   width: 100%;
   height: 200vh;
 }
- .wrapper .container {
+
+.wrapper .container {
   display: flex;
   background-color: #F3F7FA;
 }
@@ -249,195 +307,199 @@ visibility: visible;
   background-color: #0069d9;
 }
 
-      /* content........ */
-    .carrier {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+/* content........ */
+.carrier {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-    .carrier img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      margin-right: 10px;
-    }
+.carrier img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
 
-    .carrier-info {
-      flex: 1;
-    }
+.carrier-info {
+  flex: 1;
+}
 
-    .carrier-name {
-      font-size: 18px;
-      font-weight: bold;
-    }
+.carrier-name {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-    .carrier-countries {
-      font-size: 14px;
-      color: #666;
-    }
+.carrier-countries {
+  font-size: 14px;
+  color: #666;
+}
 
-    .carrier-link {
-      display: block;
-      font-size: 14px;
-      color: #007bff;
-      text-decoration: none;
-      margin-top: 5px;
-    }
+.carrier-link {
+  display: block;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 5px;
+}
 
-    .carrier-link:hover {
-      text-decoration: underline;
-    }
+.carrier-link:hover {
+  text-decoration: underline;
+}
 
-    /* Content */
-    .courseContainer{
-      background-color: rgb(232, 229, 229);
-      width: 100%;
-      height: 100%;
-      padding: 100px;
-  }
-  
+/* Content */
+.courseContainer {
+  background-color: rgb(232, 229, 229);
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
 
-  .courseContainer .course{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;   
-  }
-  
-  .courseContainer .course .courseOne{
-      width: 350px;
-      height: 500px;
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 50px;
-      position: relative;
-      box-shadow: 1px 1px 1px 0.1px rgb(158, 157, 157);
-  }
-  .courseContainer .course .courseOne .myhidden{
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-  
-     
-  
-  }
-  .courseContainer .course .courseOne .myhidden img{
-      width: 100%;
-      height:100%;
-      /* transition: all 1s; */
-      object-fit: cover;
-      
-  }
-  .courseContainer .course .courseOne .inter{
-      width: 100%;
-     
-      position: absolute;
-      padding: 0px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      top: 45px;
-  }
-  .courseContainer .course .courseOne .inter .myp1{
-      background-color: white;
-      padding: 7px;
-      text-align: center;
-      font-size: 15px;
-      color: blue;
-      border-radius: 10px;
-  }
-  .courseContainer .course .courseOne .inter .myp2{
-      background-color: hsla(0, 0%, 0%, 0.349);
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      margin-left:160px ;
-      padding: 8px;
-      border-radius: 50%;
-  }
-  /* .courseContainer .course .courseOne .myhidden img:hover{
+
+.courseContainer .course {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.courseContainer .course .courseOne {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 1px 1px 1px 0.1px rgb(158, 157, 157);
+}
+
+.courseContainer .course .courseOne .myhidden {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+
+
+
+}
+
+.courseContainer .course .courseOne .myhidden img {
+  width: 100%;
+  height: 100%;
+  /* transition: all 1s; */
+  object-fit: cover;
+
+}
+
+.courseContainer .course .courseOne .inter {
+  width: 100%;
+
+  position: absolute;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 45px;
+}
+
+.courseContainer .course .courseOne .inter .myp1 {
+  background-color: white;
+  padding: 7px;
+  text-align: center;
+  font-size: 15px;
+  color: blue;
+  border-radius: 10px;
+}
+
+.courseContainer .course .courseOne .inter .myp2 {
+  background-color: hsla(0, 0%, 0%, 0.349);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 160px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* .courseContainer .course .courseOne .myhidden img:hover{
       transform: scale(1.1);
       cursor: pointer;
   } */
-  
-  .courseContainer .course .top {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-  }
-  
-  .courseContainer .course .all h4 {
-      font-size: 25px;
-      font-weight: 520;
-      padding-left: 45px;
-  }
-  
-  .courseContainer .course .all .united .star {
-      color: gold;
-      margin-top: 20px;
-      padding-left: 50px;
-  }
-  
-  .courseContainer .course .all .united {
-      display: flex;
-      
-  }
-  
-  .courseContainer .course .all .united .review {
-      padding-top: 20px;
-      padding-left: 5px;
-  }
-  
-  .courseContainer .course  .hr {
-      width: 300px;
-      background-color: rgba(128, 128, 128, 0.356);
-      height: 0.5px;
-      margin-top: 30px;
-      margin-left: 30px;
-      
-  }
-  
-  .courseContainer .course .one {
-      display: flex;
-      justify-content: space-around;
-  }
-  
-  .courseContainer .course .one .two {
-      padding-top: 20px;
-      align-items: center;
-      display: flex;
-      justify-content: space-evenly;
-  }
-  
-  .courseContainer .course .last {
-      display: flex;
-      justify-content: space-around;
-  }
-  
-  .courseContainer .course .last div span:nth-child(2) {
-      text-decoration: line-through;
-  }
-  
-  .courseContainer .view {
-      display: flex;
-      margin-top: 30px;
-      background-color: blue;
-      color: #ffffff;
-      align-items: center;
-      margin-left: 450px;
-      width: 170px;
-      justify-content: space-between;
-      height: 50px;
-      border-radius: 5px;
-      padding: 20px;
-  }
-  
-  .courseContainer .view:hover {
-      color: white;
-      background-color: rgba(218, 165, 32, 0.733);
-      cursor: pointer;
-  }
 
-    
+.courseContainer .course .top {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.courseContainer .course .all h4 {
+  font-size: 25px;
+  font-weight: 520;
+  padding-left: 45px;
+}
+
+.courseContainer .course .all .united .star {
+  color: gold;
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.courseContainer .course .all .united {
+  display: flex;
+
+}
+
+.courseContainer .course .all .united .review {
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.courseContainer .course .hr {
+  width: 300px;
+  background-color: rgba(128, 128, 128, 0.356);
+  height: 0.5px;
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+
+.courseContainer .course .one {
+  display: flex;
+  justify-content: space-around;
+}
+
+.courseContainer .course .one .two {
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.courseContainer .course .last {
+  display: flex;
+  justify-content: space-around;
+}
+
+.courseContainer .course .last div span:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.courseContainer .view {
+  display: flex;
+  margin-top: 30px;
+  background-color: blue;
+  color: #ffffff;
+  align-items: center;
+  margin-left: 450px;
+  width: 170px;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.courseContainer .view:hover {
+  color: white;
+  background-color: rgba(218, 165, 32, 0.733);
+  cursor: pointer;
+}
